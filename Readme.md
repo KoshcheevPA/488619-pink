@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Павел Кощеев](https://up.htmlacademy.ru/adaptive/15/user/488619).
-* Наставник: `Неизвестно`.
+* Наставник: [Юрий Зайцев](https://htmlacademy.ru/profile/yuryzaytsev).
 
 ---
 
