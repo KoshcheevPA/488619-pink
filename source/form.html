@@ -11,13 +11,13 @@
         <button class="main-navigation__toggle" type="button">Кнопка меню</button>
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="#">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="#">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a href="#">Конкурс</a>
             </li>
             <li class="site-list__item">
@@ -27,8 +27,31 @@
         </div>
       </nav>
     </header>
-    <main>
-
+    <main class="page-form">
+      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <section class="form-wrapper">
+        <h2 class="visually-hidden">Форма отправки вашей истории</h2>
+        <p class="form-wrapper__information">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+        <form class="form-wrapper__form form-field" action='https://echo.htmlacademy.ru' method='post'>
+          <fieldset class="form-field__field">
+            <legend class="visually-hidden">Ваше имя</legend>
+            <ul class="form-field__list">
+              <li class="form-field__item">
+                <label class="form-field__title" for="surname">Фамилия:</label>
+                <input class="form-field__name-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__title" for="name">Имя:</label>
+                <input class="form-field__name-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
+              </li>
+              <li class="form-field__item">
+                <label class="form-field__title" for="patronymic">Отчество:</label>
+                <input class="form-field__name-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
+        </form>
+      </section>
     </main>
   </body>
 </html>
