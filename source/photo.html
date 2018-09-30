@@ -28,8 +28,9 @@
       </nav>
     </header>
     <main class="page-photo">
+      <h1 class="users-photo__title">Фотографии пользователей</h1>
       <section class="page-photo__users-photo users-photo">
-        <h1 class="users-photo__title">Фотографии пользователей</h1>
+        <h2 class="visually-hidden">Фотографии</h2>
         <p class="users-photo__description users-photo__description--top">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="users-photo__panorama">
           <span class="users-photo__panorama-text">Панорама дня</span>
@@ -85,6 +86,56 @@
         </ul>
         <p class="users-photo__description users-photo__description--bottom">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
       </section>
+      <section class="page-photo__share share">
+        <h2 class="visually-hidden">Поделиться фотографией</h2>
+        <form class="share__form" action="https://echo.htmlacademy.ru" method="post">
+          <img class="share__image" src="http://placehold.it/280x374" width="280" height="374" alt="загружаемая фотография">
+          <ul class="share__options-list">
+            <li class="share__options-item">
+              <button class="share__option share__option--framing" type="button">Кадрирование</button>
+            </li>
+            <li class="share__options-item">
+              <button class="share__option share__option--fill" type="button">Заливка</button>
+            </li>
+            <li class="share__options-item">
+              <button class="share__option share__option--contrast" type="button">Контраст</button>
+            </li>
+          </ul>
+          <p class="share__power-choose">
+            <input class="share__range-option" type="range">
+          </p>
+          <button class="share__button share__button--submit" type="submit">Запостить</button>
+          <button class="share__button share__button--cancel" type="button">Отмена</button>
+        </form>
+      </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__logo">
+        <img class="page-footer__logo-image" src="src="http://placehold.it/174x40" width="174" height="40" alt="PINK"">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="#">
+              <span class="visually-hidden">youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+    </footer>
   </body>
 </html>
