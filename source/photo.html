@@ -92,15 +92,23 @@
         <p class="share__deicription">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="share__form" action="https://echo.htmlacademy.ru" method="post">
           <img class="share__image" src="http://placehold.it/280x374" width="280" height="374" alt="загружаемая фотография">
-          <ul class="share__options-list">
-            <li class="share__options-item">
-              <button class="share__option share__option--framing" type="button">Кадрирование</button>
+          <ul class="editor__tools-list">
+            <li class="editor__list-item editor__list-item--active">
+              <button class="editor__tool editor__tool--framing" type="button" aria-label="Кадрирование"></button>
+              <div class="editor__scale">
+                <div class="editor__toggle"></div>
+              </div>
+            <li class="editor__list-item">
+              <button class="editor__tool editor__tool--fill" type="button" aria-label="Заливка"></button>
+              <div class="editor__scale">
+                <div class="editor__toggle"></div>
+              </div>
             </li>
-            <li class="share__options-item">
-              <button class="share__option share__option--fill" type="button">Заливка</button>
-            </li>
-            <li class="share__options-item">
-              <button class="share__option share__option--contrast" type="button">Контраст</button>
+            <li class="editor__list-item">
+              <button class="editor__tool editor__tool--contrast" type="button" aria-label="Контраст"></button>
+              <div class="editor__scale">
+                <div class="editor__toggle"></div>
+              </div>
             </li>
           </ul>
           <p class="share__power-choose">
