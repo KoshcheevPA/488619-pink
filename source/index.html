@@ -105,64 +105,63 @@
       <section class="tarif">
         <div class="tarif__wrapper tarif-slider">
           <h2 class="visually-hidden">Тарифный план</h2>
-
-          <ul class="tarif__list tarif-slider__item">
-            <li class="tarif__item tarif__item--head">
-              <h3 class="tarif__title">Название</h3>
-              <span class="tarif__price">Цена</span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Розовый фильтр</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Смайлики</p>
-              <span class="tarif__settings--off"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Комментарии</p>
-              <span class="tarif__settings--off"></span>
-            </li>
-          </ul>
-
-          <ul class="tarif__list tarif-slider__item">
-            <li class="tarif__item tarif__item--head">
-              <h3 class="tarif__title">Стандарт</h3>
-              <span class="tarif__price">3,99 USD</span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Розовый фильтр</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Смайлики</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Комментарии</p>
-              <span class="tarif__settings--off"></span>
-            </li>
-          </ul>
-
-          <ul class="tarif__list tarif-slider__item">
-            <li class="tarif__item tarif__item--head">
-              <h3 class="tarif__title">Название</h3>
-              <span class="tarif__price">Цена</span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Розовый фильтр</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Смайлики</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-            <li class="tarif__item">
-              <p class="tarif__settings">Комментарии</p>
-              <span class="tarif__settings--on"></span>
-            </li>
-          </ul>
-
+          <table class="tarif__table tarif-slider__item">
+            <tr class="tarif-slider__toggles">
+              <th class="tarif__header tarif__header--head">
+                <h3 class="tarif__title">Название</h3>
+                <span class="tarif__price">Цена</span>
+              </th>
+              <th class="tarif__header tarif__header--head">
+                <h3 class="tarif__title">Стандарт</h3>
+                <span class="tarif__price">3,99 USD</span>
+              </th>
+              <th class="tarif__header tarif__header--head">
+                <h3 class="tarif__title">Название</h3>
+                <span class="tarif__price">Цена</span>
+              </th>
+            </tr>
+            <tr class="tarif-slider__toggles">
+              <td class="tarif__item">
+                <p class="tarif__settings">Розовый фильтр</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Розовый фильтр</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Розовый фильтр</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+            <tr class="tarif-slider__toggles">
+              <td class="tarif__item">
+                <p class="tarif__settings">Смайлики</p>
+                <span class="tarif__settings--off"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Смайлики</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Смайлики</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+            </tr>
+            <tr class="tarif-slider__toggles">
+              <td class="tarif__item">
+                <p class="tarif__settings">Комментарии</p>
+                <span class="tarif__settings--off"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Комментарии</p>
+                <span class="tarif__settings--off"></span>
+              </td>
+              <td class="tarif__item">
+                <p class="tarif__settings">Комментарии</p>
+                <span class="tarif__settings--on"></span>
+              </td>
+            </tr>
+          </table>
           <div class="tarif__toggles tarif-slider__toggles">
             <button class="tarif-slider__toggle" type="button">1</button>
             <button class="tarif-slider__toggle" type="button">2</button>
@@ -174,13 +173,13 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__item">Звоните:
-          <a class="contacts__info contacts__info--number" href="#">+7 (812) 555-66-66</a>
+          <a class="contacts__info" href="#">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__item">Пишите:
-          <a class="contacts__info contacts__info--email" href="#">mail@htmlacademy.ru</a>
+          <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__item">Приезжайте в гости:
-          <span class="contacts__info contacts__info--address">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
         </p>
         <div class="map">
           Карта
