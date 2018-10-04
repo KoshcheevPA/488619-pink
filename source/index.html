@@ -3,51 +3,54 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+      <a class="logo-link">
+        <img class="logo-link__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
       </a>
       <nav class="main-navigation">
         <button class="main-navigation__toggle" type="button">Кнопка меню</button>
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
+      <div class="page-title">
+        <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
+        <img class="page-tite__image" src="./img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в вашем смартфоне">
+      </div>
       <section class="download-information">
         <h2 class="visually-hidden">Загрузка приложения</h2>
-        <img class="download-information__image" src="http://placehold.it/320x462" width="320" height="462" alt="Пинк в вашем смартфоне">
         <a class="download-information__download-button" href="https://www.apple.com/itunes">Скачать приложение</a>
         <ul class="download-information__list supported-platforms">
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--apple" href="https://www.apple.com/itunes">
+            <a class="supported-platforms__link supported-platforms__link--apple" href="https://www.apple.com/itunes">
               <span class="visually-hidden">Apple</span>
             </a>
           </li>
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--android" href="https://play.google.com/store">
+            <a class="supported-platforms__link supported-platforms__link--android" href="https://play.google.com/store">
               <span class="visually-hidden">Android</span>
             </a>
           </li>
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--windows" href="https://www.microsoft.com/en-us/store">
+            <a class="supported-platforms__link supported-platforms__link--windows" href="https://www.microsoft.com/en-us/store">
               <span class="visually-hidden">Windows</span>
             </a>
           </li>
@@ -123,42 +126,42 @@
             <tr class="tarif-slider__toggles">
               <td class="tarif__item">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             <tr class="tarif-slider__toggles">
               <td class="tarif__item">
                 <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             </tr>
             <tr class="tarif-slider__toggles">
               <td class="tarif__item">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             </tr>
           </table>
@@ -173,10 +176,10 @@
         <h2 class="visually-hidden">Контактная информация</h2>
         <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
         <p class="contacts__item">Звоните:
-          <a class="contacts__info" href="#">+7 (812) 555-66-66</a>
+          <a class="contacts__info" href="tel: +78125556666">+7 (812) 555-66-66</a>
         </p>
         <p class="contacts__item">Пишите:
-          <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
+          <a class="contacts__info" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="contacts__item">Приезжайте в гости:
           <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>

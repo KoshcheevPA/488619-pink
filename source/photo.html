@@ -3,27 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo-link" href="index.html">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+      <a class="logo-link" href="index.html">
+        <img class="logo-link__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
       </a>
-      <nav class="main-navigation">
+      <nav class="page-header__navigation main-navigation">
         <button class="main-navigation__toggle" type="button">Кнопка меню</button>
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item  site-list__item--active">
-              <a>Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </div>
