@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo-link">
-        <img class="logo-link__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-      </a>
+      <div class="visible-header">
+        <a class="visible-header__logo-link">
+          <img class="visible-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
+        <button class="visible-header__navigation-toggle" type="button">Кнопка меню</button>
+      </div>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Кнопка меню</button>
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -33,7 +35,7 @@
     <main class="page-main">
       <div class="page-title">
         <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
-        <img class="page-tite__image" src="./img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в вашем смартфоне">
+        <img class="page-title__image" src="./img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в вашем смартфоне">
       </div>
       <section class="download-information">
         <h2 class="visually-hidden">Загрузка приложения</h2>
@@ -60,9 +62,9 @@
         </p>
       </section>
       <section class="application-functions">
-        <div class="additionally-information">
-          <p class="additionally-information__item">Устали от серости мегаполиса?</p>
-          <p class="additionally-information__item">Нам есть, что вам предложить!</p>
+        <div class="application-functions__additionally-information">
+          <p class="application-functions__text">Устали от серости мегаполиса?</p>
+          <p class="application-functions__text">Нам есть, что вам предложить!</p>
         </div>
         <h2 class="visually-hidden">Функции приложения</h2>
         <ul class="application-functions__list">
@@ -79,7 +81,7 @@
             <p class="application-functions__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="application-functions__image" src="http://placehold.it/157x320" width="157" height="320" alt="Скрин приложения">
+        <img class="application-functions__image" src="./img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Скрин приложения">
       </section>
       <section class="comments">
         <div class="comments__wrapper slider">
