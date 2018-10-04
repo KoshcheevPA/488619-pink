@@ -91,11 +91,11 @@
               <h3 class="comments__title">Николай Петров</h3>
               <p class="comments__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__title">Имя</h3>
               <p class="comments__message">Сообщение</p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__title">Имя</h3>
               <p class="comments__message">Сообщение</p>
             </li>
@@ -112,7 +112,7 @@
           <h2 class="visually-hidden">Тарифный план</h2>
           <table class="tarif__table tarif-slider__item">
             <tr class="tarif-slider__toggles">
-              <th class="tarif__header tarif__header--head">
+              <th class="tarif__header tarif__header--head visually-hidden">
                 <p class="tarif__title">Название</p>
                 <span class="tarif__price">Цена</span>
               </th>
@@ -120,13 +120,13 @@
                 <p class="tarif__title">Стандарт</p>
                 <span class="tarif__price">3,99 USD</span>
               </th>
-              <th class="tarif__header tarif__header--head">
+              <th class="tarif__header tarif__header--head visually-hidden">
                 <p class="tarif__title">Название</p>
                 <span class="tarif__price">Цена</span>
               </th>
             </tr>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Розовый фильтр</p>
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
@@ -134,12 +134,12 @@
                 <p class="tarif__settings">Розовый фильтр</p>
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Розовый фильтр</p>
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Смайлики</p>
                 <span class="tarif__connected tarif__connected--off"></span>
               </td>
@@ -148,12 +148,12 @@
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
-                <p class="tarif__settings">Смайлики</p>
+                <p class="tarif__settings visually-hidden">Смайлики</p>
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
             </tr>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Комментарии</p>
                 <span class="tarif__connected tarif__connected--off"></span>
               </td>
@@ -161,7 +161,7 @@
                 <p class="tarif__settings">Комментарии</p>
                 <span class="tarif__connected tarif__connected--off"></span>
               </td>
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Комментарии</p>
                 <span class="tarif__connected tarif__connected--on"></span>
               </td>
@@ -175,19 +175,21 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__item">Звоните:
-          <a class="contacts__info" href="tel: +78125556666">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__item">Пишите:
-          <a class="contacts__info" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__item">Приезжайте в гости:
-          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
-        </p>
-        <div class="map">
-          Карта
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__item">Звоните:<br>
+            <a class="contacts__info" href="tel: +78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__item">Пишите:<br>
+            <a class="contacts__info" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__item">Приезжайте в гости:<br>
+            <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+        <div class="contacts__map">
+          <span class="visually-hidden">Карта</span>
         </div>
       </section>
     </main>
