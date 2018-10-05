@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo-link" href="index.html">
-        <img class="logo-link__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-      </a>
-      <nav class="page-header__navigation main-navigation">
-        <button class="main-navigation__toggle" type="button">Кнопка меню</button>
+      <div class="visible-header">
+        <a class="visible-header__logo-link">
+          <img class="visible-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
+        <button class="visible-header__navigation-toggle" type="button">Кнопка меню</button>
+      </div>
+      <nav class="main-navigation">
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
@@ -32,7 +34,7 @@
     </header>
     <main class="page-photo">
       <h1 class="users-photo__title">Фотографии пользователей</h1>
-      <section class="page-photo__users-photo users-photo">
+      <section class="users-photo users-photo">
         <h2 class="visually-hidden">Фотографии</h2>
         <p class="users-photo__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <div class="users-photo__panorama">
@@ -88,7 +90,7 @@
           </li>
         </ul>
       </section>
-      <section class="page-photo__share share">
+      <section class="share">
         <h2 class="visually-hidden">Поделиться фотографией</h2>
         <p class="share__deicription">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
         <form class="share__form" action="https://echo.htmlacademy.ru" method="post">

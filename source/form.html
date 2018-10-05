@@ -7,11 +7,13 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="logo-link" href="index.html">
-        <img class="logo-link__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
-      </a>
+      <div class="visible-header">
+        <a class="visible-header__logo-link">
+          <img class="visible-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+        </a>
+        <button class="visible-header__navigation-toggle" type="button">Кнопка меню</button>
+      </div>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Кнопка меню</button>
         <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
@@ -31,7 +33,7 @@
       </nav>
     </header>
     <main class="page-form">
-      <h1 class="page-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-title page-title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="form-wrapper">
         <h2 class="visually-hidden">Форма отправки вашей истории</h2>
         <p class="form-wrapper__information">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
@@ -59,7 +61,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field">
+          <fieldset class="form-field__field form-field__field--grey">
             <legend class="visually-hidden">Ваши достижения</legend>
             <p class="form-field__title">Ваши безбашенные достижения в путешествии</p>
             <ul class="form-field__checkbox-list">
@@ -107,18 +109,18 @@
               <li class="form-field__contacts-item">
                 <label class="form-field__description">
                   Номер телефона
-                  <input class="form-field__phone-number" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+                  <input class="form-field__contact-input" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
                 </label>
               </li>
               <li class="form-field__contacts-item">
                 <label class="form-field__description">
                   Адрес почты
-                  <input class="form-field__email" type="email" name="email" placeholder="Введите почту *" required>
+                  <input class="form-field__contact-input" type="email" name="email" placeholder="Введите почту *" required>
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field">
+          <fieldset class="form-field__field form-field__field--grey">
             <legend class="visually-hidden">Выбор приложения</legend>
             <p class="form-field__title">С каким приложением путешествовали?</p>
             <ul class="form-field__radio-list">
@@ -144,13 +146,15 @@
           </fieldset>
           <fieldset class="form-field__field">
             <legend class="visually-hidden">Текстовый комментарий</legend>
-            <p class="form-field__title">Опишите свои эмоции</p>
+            <p class="form-field__title form-field__title--comment">Опишите свои эмоции</p>
             <p class="form-field__comment">
               <textarea class="form-field__comment-field" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
           </fieldset>
-          <button class="form-field__submit-button" type="submit">Отправить</button>
-          <p class="form-field__explanation"><span class="form-field__explanation--asteriks">*</span> — обязательные поля</p>
+          <div class="form-field__submit">
+            <button class="form-field__submit-button" type="submit">Отправить форму</button>
+            <p class="form-field__explanation"><span class="form-field__explanation--asteriks">*</span> — обязательные поля</p>
+        </div>
         </form>
         <div class="submit-sucsess">
           <p class="submit-sucsess__title">Ваша заявка отправлена</p>
