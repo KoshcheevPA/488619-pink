@@ -19,7 +19,7 @@
 
 .form-field__description {
   padding-left: 20px;
-  color: #d22856;
+  color: @pink;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
@@ -45,7 +45,7 @@
 }
 
 .form-field__field--grey {
-  background-color: #f2f2f2;
+  background-color: @grey;
   padding-bottom: 0;
 }
 
@@ -55,7 +55,7 @@
   text-align: center;
   font-size: 14px;
   line-height: 18px;
-  color: #d22856;
+  color: @pink;
   text-transform: uppercase;
 }
 
@@ -97,11 +97,19 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 2px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .form-field__explanation {
@@ -114,5 +122,5 @@
 }
 
 .form-field__explanation--asteriks {
-  color: #d22856;
+  color: @pink;
 }

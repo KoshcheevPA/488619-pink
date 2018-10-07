@@ -1,8 +1,8 @@
-.submit-sucsess {
+.submit-unsucsess {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.submit-sucsess__title {
+.submit-unsucsess__title {
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -13,10 +13,10 @@
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
-  color: #000000;
+  color: @black;
 }
 
-.submit-sucsess__text {
+.submit-unsucsess__text {
   margin: 0;
   padding-bottom: 32px;
   padding-left: 20px;
@@ -28,17 +28,15 @@
   color: @dark-blue;
 }
 
-.submit-sucsess__button-wrapper {
+.submit-unsucsess__button-wrapper {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 48px;
   padding-bottom: 52px;
   margin: 0;
-  background-color: #f2f2f2;
 }
 
-.submit-sucsess__close-button {
+.submit-unsucsess__close-button {
   display: block;
   width: 100%;
   padding-top: 12px;
@@ -46,9 +44,17 @@
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
   text-transform: uppercase;
   background-color: #2aab6d;
   border: 2px solid #2aab6d;
   border-radius: 2px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

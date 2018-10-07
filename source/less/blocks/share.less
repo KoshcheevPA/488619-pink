@@ -1,0 +1,55 @@
+.share__deicription {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  .little-text;
+}
+
+.share__form {
+  background-color: @grey;
+  padding: 20px;
+}
+
+.share__button {
+  display: block;
+  width: 100%;
+  padding: 16px 91px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  border-radius: 30px;
+
+  &--submit {
+    color: @pink;
+    border: 3px solid @pink;
+  }
+
+  &--cancel {
+    color: rgba(40, 54, 69, 0.1);
+    background-color: rgba(246, 246, 246, 0.1);
+    border: 3px solid rgba(40, 54, 69, 0.1);
+  }
+
+  &--submit:hover {
+    color: @white;
+    background-color: @pink;
+  }
+
+  &--submit:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--cancel:hover {
+    color: rgba(40, 54, 69, 0.3);
+    background-color: #f6f6f6;
+    border-color: rgba(40, 54, 69, 0.3);
+  }
+
+  &--cancel:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @dark-blue;
+    border-color: @dark-blue;
+    opacity: 0.3;
+  }
+}

@@ -6,24 +6,34 @@
   line-height: 24px;
   font-weight: 300;
   background-color: #1d2631;
-  color: #ffffff;
+  color: @white;
 }
 
 .download-information__download-button {
   display: inline-block;
   text-align: center;
-  padding-left: 44px;
-  padding-right: 44px;
-  padding-top: 17px;
-  padding-bottom: 14px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-top: 15px;
+  padding-bottom: 16px;
   margin: 0;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
-  color: #ffffff;
+  color: @white;
   text-decoration: none;
-  border: 3px solid #ffffff;
+  border: 3px solid @white;
   border-radius: 30px;
+
+  &:hover {
+    color: @pink;
+    background-color: @white;
+  }
+
+  &:active {
+    color: rgba(210, 40, 86, 0.3);
+    background-color: @white;
+  }
 }
 
 .download-information__description {
