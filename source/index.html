@@ -3,51 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
     <header class="page-header">
-      <a class="page-header__logo-link">
-        <img class="page-header__logo-image" src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-      </a>
-      <nav class="main-navigation">
-        <button class="main-navigation__toggle" type="button">Кнопка меню</button>
-        <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
-            </li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="visible-header">
+          <a class="visible-header__logo-link">
+            <img class="visible-header__logo-image" src="./img/logo-pink-white-mobile.svg" width="75" height="22" alt="PINK">
+          </a>
+        </div>
+        <nav class="main-navigation">
+          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
+            <ul class="main-navigation__list site-list">
+              <li class="site-list__item">
+                <a class="site-list__link site-list__link--active">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
+      <!-- <img class="page-title" src="./img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Пинк в вашем смартфоне"> -->
+      <div class="page-title page-title--main"></div>
       <section class="download-information">
         <h2 class="visually-hidden">Загрузка приложения</h2>
-        <img class="download-information__image" src="http://placehold.it/320x462" width="320" height="462" alt="Пинк в вашем смартфоне">
         <a class="download-information__download-button" href="https://www.apple.com/itunes">Скачать приложение</a>
         <ul class="download-information__list supported-platforms">
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--apple" href="https://www.apple.com/itunes">
+            <a class="supported-platforms__link supported-platforms__link--apple" href="https://www.apple.com/itunes">
               <span class="visually-hidden">Apple</span>
             </a>
           </li>
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--android" href="https://play.google.com/store">
+            <a class="supported-platforms__link supported-platforms__link--android" href="https://play.google.com/store">
               <span class="visually-hidden">Android</span>
             </a>
           </li>
           <li class="supported-platforms__item">
-            <a class="supported-platforms__item--windows" href="https://www.microsoft.com/en-us/store">
+            <a class="supported-platforms__link supported-platforms__link--windows" href="https://www.microsoft.com/en-us/store">
               <span class="visually-hidden">Windows</span>
             </a>
           </li>
@@ -57,9 +63,9 @@
         </p>
       </section>
       <section class="application-functions">
-        <div class="additionally-information">
-          <p class="additionally-information__item">Устали от серости мегаполиса?</p>
-          <p class="additionally-information__item">Нам есть, что вам предложить!</p>
+        <div class="application-functions__additionally-information">
+          <p class="application-functions__text">Устали от серости мегаполиса?</p>
+          <p class="application-functions__text">Нам есть, что вам предложить!</p>
         </div>
         <h2 class="visually-hidden">Функции приложения</h2>
         <ul class="application-functions__list">
@@ -76,7 +82,6 @@
             <p class="application-functions__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img class="application-functions__image" src="http://placehold.it/157x320" width="157" height="320" alt="Скрин приложения">
       </section>
       <section class="comments">
         <div class="comments__wrapper slider">
@@ -86,11 +91,11 @@
               <h3 class="comments__title">Николай Петров</h3>
               <p class="comments__message">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__title">Имя</h3>
               <p class="comments__message">Сообщение</p>
             </li>
-            <li class="comments__item slider__item">
+            <li class="comments__item slider__item visually-hidden">
               <h3 class="comments__title">Имя</h3>
               <p class="comments__message">Сообщение</p>
             </li>
@@ -107,7 +112,7 @@
           <h2 class="visually-hidden">Тарифный план</h2>
           <table class="tarif__table tarif-slider__item">
             <tr class="tarif-slider__toggles">
-              <th class="tarif__header tarif__header--head">
+              <th class="tarif__header tarif__header--head visually-hidden">
                 <p class="tarif__title">Название</p>
                 <span class="tarif__price">Цена</span>
               </th>
@@ -115,50 +120,50 @@
                 <p class="tarif__title">Стандарт</p>
                 <span class="tarif__price">3,99 USD</span>
               </th>
-              <th class="tarif__header tarif__header--head">
+              <th class="tarif__header tarif__header--head visually-hidden">
                 <p class="tarif__title">Название</p>
                 <span class="tarif__price">Цена</span>
               </th>
             </tr>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Розовый фильтр</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
               <td class="tarif__item">
-                <p class="tarif__settings">Смайлики</p>
-                <span class="tarif__settings--on"></span>
+                <p class="tarif__settings visually-hidden">Смайлики</p>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             </tr>
             <tr class="tarif-slider__toggles">
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
               <td class="tarif__item">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--off"></span>
+                <span class="tarif__connected tarif__connected--off"></span>
               </td>
-              <td class="tarif__item">
+              <td class="tarif__item visually-hidden">
                 <p class="tarif__settings">Комментарии</p>
-                <span class="tarif__settings--on"></span>
+                <span class="tarif__connected tarif__connected--on"></span>
               </td>
             </tr>
           </table>
@@ -170,19 +175,21 @@
         </div>
       </section>
       <section class="contacts">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
-        <p class="contacts__item">Звоните:
-          <a class="contacts__info" href="#">+7 (812) 555-66-66</a>
-        </p>
-        <p class="contacts__item">Пишите:
-          <a class="contacts__info" href="#">mail@htmlacademy.ru</a>
-        </p>
-        <p class="contacts__item">Приезжайте в гости:
-          <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
-        </p>
-        <div class="map">
-          Карта
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Контактная информация</h2>
+          <p class="contacts__description contacts__description--title">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__item">Звоните:<br>
+            <a class="contacts__info" href="tel: +78125556666">+7 (812) 555-66-66</a>
+          </p>
+          <p class="contacts__item">Пишите:<br>
+            <a class="contacts__info" href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+          <p class="contacts__item">Приезжайте в гости:<br>
+            <span class="contacts__info">ул. Большая Конюшенная, 19/8</span>
+          </p>
+        </div>
+        <div class="contacts__map">
+          <span class="visually-hidden">Карта</span>
         </div>
       </section>
     </main>

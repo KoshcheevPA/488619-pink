@@ -1,0 +1,100 @@
+.users-photo {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.users-photo__panorama {
+  background-color: @grey;
+
+  &::before {
+    content: "Панорама дня";
+    position: absolute;
+    margin: 0;
+    left: 164px;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    color: @white;
+    text-transform: uppercase;
+    background-color: @pink;
+    padding: 6px 20px;
+    z-index: 1;
+  }
+}
+
+.users-photo__post-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.users-photo__description {
+  text-align: center;
+  .little-text;
+}
+
+.users-photo__panorama-image {
+  position: relative;
+  margin-left: -20px;
+}
+
+.users-photo__user-name {
+  margin: 0;
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @dark-blue;
+}
+
+.users-photo__time {
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.users-photo__text {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @dark-blue;
+}
+
+.users-photo__like-quantity {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 22px;
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink;
+  text-transform: uppercase;
+}
+
+.users-photo__like-button {
+  margin-top: 15px;
+  margin-bottom: 22px;
+  text-align: left;
+  font-size: 12px;
+  line-height: 24px;
+  color: @pink;
+  text-transform: uppercase;
+  border: none;
+  background-color: inherit;
+}
+
+.users-photo__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+  list-style: none;
+}
+
+.users-photo__list-item {
+  margin-bottom: 20px;
+  background-color: @grey;
+}
