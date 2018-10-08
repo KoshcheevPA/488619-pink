@@ -1,3 +1,25 @@
-.page-header {
-  background-color: rgba(29, 38, 50, 0.3);
+.page-header__wrapper {
+  display: flex;
+  position: relative;
+  z-index: 30;
+  flex-direction: row;
+  height: 28px;
+  padding: 19px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__wrapper {
+    // height: 110px;
+    padding: 41px 20px;
+    // background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .page-header__wrapper {
+    // height: 110px;
+    padding: 41px 120px;
+    // background-color: rgba(0, 0, 0, 0.3);
+  }
 }

@@ -1,10 +1,11 @@
 .page-title {
-  margin-top: -121px;
+  margin-top: -66px;
   padding-top: 176px;
   padding-right: 62px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #25323f;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-title--main::after {
@@ -33,4 +34,16 @@
 
 .page-title--photo-page {
   padding-bottom: 76px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    margin-top: -110px;
+  }
+}
+
+@media (min-width: @dekstop-width) {
+  .page-title {
+    margin-top: -110px;
+  }
 }

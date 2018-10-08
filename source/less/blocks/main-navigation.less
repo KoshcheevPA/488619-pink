@@ -1,11 +1,28 @@
+.main-navigation {
+  margin-left: auto;
+  background-color: none;
+}
+
 .main-navigation__toggle {
-  position: absolute;
-  left: 200px;
-  top: 20px;
+  // position: absolute;
+  // z-index: 15;
+  // left: 250px;
+  // top: 20px;
   width: 50px;
   height: 24px;
   font-size: 0;
   background-image: url("../img/icon-menu-burger.svg");
   border: none;
   background-color: transparent;
+}
+
+
+@media (min-width: @dekstop-width) {
+  .main-navigation__toggle {
+    display: none;
+  }
+
+  .main-navigation {
+    width: 700px;
+  }
 }
