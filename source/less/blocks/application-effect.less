@@ -1,9 +1,10 @@
-.application-effect {
+.application-effect__wrapper {
   display: none;
+  padding-right: 20px;
+  margin: 0 auto;
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
-  padding-right: 20px;
 }
 
 .application-effect__title {
@@ -20,12 +21,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .application-effect {
+  .application-effect__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 620px;
     padding-top: 25px;
     padding-bottom: 67px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .application-effect__description {
@@ -39,7 +43,7 @@
   .application-effect__timer {
     width: 300px;
     height: 345px;
-    margin: 0 auto;
+    margin-left: -30px;
     text-align: center;
     font-size: 120px;
     line-height: 120px;
@@ -55,7 +59,7 @@
     width: 210px;
     height: 120px;
     padding: 0;
-    margin: auto;
+    margin-left: 27px;
     padding-top: 35px;
     padding-bottom: 48px;
     margin-top: 79px;
@@ -66,13 +70,18 @@
 
 @media (min-width: @desktop-width) {
   .application-effect {
-    padding-left: 10px;
-    padding-right: 10px;
     background-color: @grey;
   }
 
+  .application-effect__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .application-effect__timer {
-    width: 300px;
+    width: 360px;
+    margin: 0;
     transform: none;
   }
 

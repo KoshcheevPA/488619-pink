@@ -1,11 +1,11 @@
 .contacts {
   text-align: center;
-  margin: 0 auto;
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
   background-color: @white;
 }
 
@@ -36,14 +36,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
-    width: 620px;
-  }
-
   .contacts__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 620px;
+    padding: 0 20px;
   }
 
   .contacts__description {
@@ -65,14 +63,12 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
-    width: 940px;
-  }
-
   .contacts__wrapper {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
+    width: 940px;
+    padding: 0 10px;
   }
 
   .contacts__item:nth-child(3) {

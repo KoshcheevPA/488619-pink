@@ -1,6 +1,9 @@
 .comment {
-  display: flex;
   background-color: @black;
+}
+
+.comments__wrapper {
+  margin: 0 auto;
 }
 
 .comments__list {
@@ -41,8 +44,9 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comment {
+  .comments__wrapper {
     width: 620px;
+    padding: 0 20px;
   }
 
   .comments__message {
@@ -63,8 +67,9 @@
 }
 
 @media (min-width: @desktop-width) {
-  .comment {
-    width: 920px;
+  .comments__wrapper {
+    width: 940px;
+    padding: 0 10px;
   }
 
   .comments__message {

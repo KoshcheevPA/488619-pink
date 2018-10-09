@@ -1,11 +1,16 @@
+.page-header {
+  position: relative;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
 .page-header__wrapper {
   display: flex;
+  flex-direction: row;
   position: relative;
   z-index: 30;
-  flex-direction: row;
-  height: 28px;
+  margin: 0 auto;
   padding: 19px 20px;
-  background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: @tablet-width) {
@@ -16,6 +21,7 @@
 
 @media (min-width: @desktop-width) {
   .page-header__wrapper {
-    margin: 0 auto;
+    width: 940px;
+    padding: 41px 10px;
   }
 }

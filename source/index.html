@@ -38,29 +38,31 @@
       <h1 class="visually-hidden">Мобильное приложение "PINK"</h1>
       <div class="page-title page-title--main"></div>
       <section class="download-information">
-        <h2 class="visually-hidden">Загрузка приложения</h2>
-        <p class="download-information__title">Взгляните на жизнь иначе!</p>
-        <a class="download-information__download-button" href="https://www.apple.com/itunes">Скачать приложение</a>
-        <ul class="download-information__list supported-platforms">
-          <li class="supported-platforms__item">
-            <a class="supported-platforms__link supported-platforms__link--apple" href="https://www.apple.com/itunes">
-              <span class="visually-hidden">Apple</span>
-            </a>
-          </li>
-          <li class="supported-platforms__item">
-            <a class="supported-platforms__link supported-platforms__link--android" href="https://play.google.com/store">
-              <span class="visually-hidden">Android</span>
-            </a>
-          </li>
-          <li class="supported-platforms__item">
-            <a class="supported-platforms__link supported-platforms__link--windows" href="https://www.microsoft.com/en-us/store">
-              <span class="visually-hidden">Windows</span>
-            </a>
-          </li>
-        </ul>
-        <p class="download-information__description">
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
+        <div class="download-information__wrapper">
+          <h2 class="visually-hidden">Загрузка приложения</h2>
+          <p class="download-information__title">Взгляните на жизнь иначе!</p>
+          <a class="download-information__download-button" href="https://www.apple.com/itunes">Скачать приложение</a>
+          <ul class="download-information__list supported-platforms">
+            <li class="supported-platforms__item">
+              <a class="supported-platforms__link supported-platforms__link--apple" href="https://www.apple.com/itunes">
+                <span class="visually-hidden">Apple</span>
+              </a>
+            </li>
+            <li class="supported-platforms__item">
+              <a class="supported-platforms__link supported-platforms__link--android" href="https://play.google.com/store">
+                <span class="visually-hidden">Android</span>
+              </a>
+            </li>
+            <li class="supported-platforms__item">
+              <a class="supported-platforms__link supported-platforms__link--windows" href="https://www.microsoft.com/en-us/store">
+                <span class="visually-hidden">Windows</span>
+              </a>
+            </li>
+          </ul>
+          <p class="download-information__description">
+            Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+          </p>
+        </div>
       </section>
       <section class="application-functions">
         <div class="application-functions__additionally-information">
@@ -84,14 +86,16 @@
         </ul>
       </section>
       <section class="application-effect">
-        <div class="application-effect__timer">
-          <span class="application-effect__number">24</span>
-        </div>
-        <div class="application-effect__description">
-          <h2 class="visually-hidden">Исследование об эффекте от приложения</h2>
-          <b class="application-effect__title">Эффект на 24 часа!</b>
-          <p class="application-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a class="application-effect__link" href="#">Узнать больше об исследовании</a>
+        <div class="application-effect__wrapper">
+          <div class="application-effect__timer">
+            <span class="application-effect__number">24</span>
+          </div>
+          <div class="application-effect__description">
+            <h2 class="visually-hidden">Исследование об эффекте от приложения</h2>
+            <b class="application-effect__title">Эффект на 24 часа!</b>
+            <p class="application-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="application-effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
       <section class="comments">
@@ -205,32 +209,34 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer page-footer--main">
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="174" height="40" alt="PINK">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">youtube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper page-footer__wrapper--main">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="174" height="40" alt="PINK">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
   </body>
