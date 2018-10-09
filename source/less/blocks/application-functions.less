@@ -87,8 +87,6 @@
       order: 1;
       width: 272px;
       height: 481px;
-      margin-left: auto;
-      margin-right: 0;
       background-image: url("../img/iphone-screen-3-tablet@1x.png");
       background-repeat: no-repeat;
     }
@@ -98,9 +96,7 @@
     text-align: left;
     width: 310px;
     padding: 0;
-    padding-right: 20px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
     order: 2;
   }
 }
@@ -129,15 +125,16 @@
 
   .application-functions__list {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
-    padding-left: 130px;
-    padding-right: 130px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
   }
 
   .application-functions__item {
     width: 292px;
+    margin: 0 auto;
 
     &--first::before {
       content: "";

@@ -1,0 +1,81 @@
+.application-effect {
+  display: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  padding-right: 20px;
+}
+
+.application-effect__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.application-effect__text {
+  color: @dark-blue;
+}
+
+.application-effect__link {
+  color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .application-effect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 25px;
+    padding-bottom: 67px;
+  }
+
+  .application-effect__description {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    padding-top: 72px;
+  }
+
+  .application-effect__timer {
+    width: 300px;
+    height: 345px;
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: bold;
+    color: @pink;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+  }
+
+  .application-effect__number {
+    display: block;
+    vertical-align: middle;
+    width: 210px;
+    height: 120px;
+    padding: 0;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 48px;
+    margin-top: 79px;
+    border: 17px solid @pink;
+    border-radius: 50%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-effect {
+    padding-left: 130px;
+    padding-right: 130px;
+    background-color: @grey;
+  }
+
+  .application-effect__timer {
+    transform: none;
+  }
+
+  .application-effect__description {
+    width: 580px;
+  }
+}
