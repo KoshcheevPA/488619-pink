@@ -1,13 +1,17 @@
 .comment {
+  display: flex;
   background-color: @black;
 }
 
 .comments__list {
+  display: flex;
   margin: 0;
   padding: 0;
 }
 
 .comments__item {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   margin: 0;
   padding: 45px 21px;
@@ -26,7 +30,57 @@
   .little-text;
 }
 
+.comments__user-description {
+  display: none;
+  .little-text;
+}
+
 .comments__toggles {
   text-align: center;
   background-color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .comment {
+    width: 620px;
+  }
+
+  .comments__message {
+    order: 1;
+    font-size: 18px;
+  }
+
+  .comments__title {
+    font-size: 20px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .comments__user-description {
+    display: block;
+    order: 3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    width: 920px;
+  }
+
+  .comments__message {
+    order: 1;
+    padding: 0 120px;
+  }
+
+  .comments__title {
+    font-size: 24px;
+    line-height: 30px;
+    order: 2;
+  }
+
+  .comments__user-description {
+    display: block;
+    font-size: 18px;
+    order: 3;
+  }
 }

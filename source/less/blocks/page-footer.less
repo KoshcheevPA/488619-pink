@@ -5,4 +5,34 @@
 .page-footer__logo-link {
   display: block;
   text-align: center;
+  margin-right: auto;
+}
+
+.page-footer--main {
+  display: none;
+}
+
+.page-footer__copyright {
+  margin-left: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer--main {
+    display: flex;
+  }
+
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 660px;
+    padding: 35px 20px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer {
+    width: 960px;
+    padding: 68px 10px;
+  }
 }
