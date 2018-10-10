@@ -108,58 +108,64 @@
       <section class="share">
         <h2 class="visually-hidden">Поделиться фотографией</h2>
         <p class="share__deicription">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-        <form class="share__form" action="https://echo.htmlacademy.ru" method="post">
-          <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="загружаемая фотография">
-          <ul class="share__editor editor">
-            <li class="editor__list-item editor__list-item--active">
-              <button class="editor__tool editor__tool--framing" type="button" aria-label="Кадрирование"></button>
-              <div class="editor__scale">
-                <div class="editor__toggle"></div>
-              </div>
-            <li class="editor__list-item">
-              <button class="editor__tool editor__tool--fill" type="button" aria-label="Заливка"></button>
-              <div class="editor__scale">
-                <div class="editor__toggle"></div>
-              </div>
-            </li>
-            <li class="editor__list-item">
-              <button class="editor__tool editor__tool--contrast" type="button" aria-label="Контраст"></button>
-              <div class="editor__scale">
-                <div class="editor__toggle"></div>
-              </div>
-            </li>
-          </ul>
-          <button class="share__button share__button--submit" type="submit">Запостить</button>
-          <button class="share__button share__button--cancel" type="button">Отмена</button>
-        </form>
+        <div class="share__background-wrapper">
+          <form class="share__form" action="https://echo.htmlacademy.ru" method="post">
+            <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="загружаемая фотография">
+            <div class="share__wrapper">
+              <ul class="share__editor editor">
+                <li class="editor__list-item editor__list-item--active">
+                  <button class="editor__tool editor__tool--framing" type="button" aria-label="Кадрирование"></button>
+                  <div class="editor__scale">
+                    <div class="editor__toggle"></div>
+                  </div>
+                <li class="editor__list-item">
+                  <button class="editor__tool editor__tool--fill" type="button" aria-label="Заливка"></button>
+                  <div class="editor__scale">
+                    <div class="editor__toggle"></div>
+                  </div>
+                </li>
+                <li class="editor__list-item">
+                  <button class="editor__tool editor__tool--contrast" type="button" aria-label="Контраст"></button>
+                  <div class="editor__scale">
+                    <div class="editor__toggle"></div>
+                  </div>
+                </li>
+              </ul>
+              <button class="share__button share__button--submit" type="submit">Запостить</button>
+              <button class="share__button share__button--cancel" type="button">Отмена</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
-      <a class="page-footer__logo-link" href="index.html">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="174" height="40" alt="PINK">
-      </a>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">twitter</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">facebook</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
-              <span class="visually-hidden">youtube</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo-link" href="index.html">
+          <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="174" height="40" alt="PINK">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                <span class="visually-hidden">twitter</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="#">
+                <span class="visually-hidden">facebook</span>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                <span class="visually-hidden">youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
   </body>
