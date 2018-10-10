@@ -1,10 +1,11 @@
 .users-photo {
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  margin: 0 auto;
 }
 
 .users-photo__panorama {
-  background-color: @grey;
+  // padding: 0;
 
   &::before {
     content: "Панорама дня";
@@ -23,21 +24,33 @@
 }
 
 .users-photo__post-text {
+  width: 244px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 0;
   padding-left: 18px;
   padding-right: 18px;
+  margin: 0 auto;
+  background-color: @grey;
+}
+
+.users-photo__image {
+  display: flex;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .users-photo__description {
+  margin: 0 auto;
   text-align: center;
   .little-text;
 }
 
 .users-photo__panorama-image {
   position: relative;
-  margin-left: -20px;
+  display: flex;
+  width: 100%;
 }
 
 .users-photo__user-name {
@@ -51,6 +64,7 @@
 
 .users-photo__time {
   margin: 0;
+  font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -88,13 +102,87 @@
 }
 
 .users-photo__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
   list-style: none;
 }
 
 .users-photo__list-item {
   margin-bottom: 20px;
-  background-color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__description {
+    width: 620px;
+    padding-top: 92px;
+    padding-bottom: 80px;
+    font-size: 18px;
+  }
+
+  .users-photo__post-text {
+    width: 250px;
+    display: flex;
+    min-height: 155px;
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &--panorama {
+      width: 570px;
+    }
+  }
+
+  .users-photo__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .users-photo__list-item {
+    width: 300px;
+    min-height: 456px;
+  }
+
+  .users-photo__like-quantity {
+    margin-top: 19px;
+  }
+
+  .users-photo__image {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__description {
+    width: 940px;
+  }
+
+  .users-photo__post-text {
+    &--panorama {
+      width: 890px;
+    }
+  }
+
+  .users-photo__list {
+    width: 940px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .users-photo__list-item {
+    width: 300px;
+    min-height: 555px;
+  }
+
+  .users-photo__image {
+    height: 400px;
+  }
 }
