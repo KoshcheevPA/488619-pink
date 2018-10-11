@@ -1,9 +1,12 @@
 .form-field__field {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   border: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-top: 40px;
-  padding-bottom: 22px;
+  padding-bottom: 42px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -12,8 +15,12 @@
 .form-field__contacts-list,
 .form-field__checkbox-list,
 .form-field__radio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 }
 
@@ -23,6 +30,24 @@
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
+}
+
+.form-field__list {
+  min-height: 320px;
+}
+
+.form-field__contacts-list {
+  min-height: 205px;
+}
+
+.form-field__checkbox-list {
+  min-height: 455px;
+  padding-bottom: 42px;
+}
+
+.form-field__radio-list {
+  min-height: 190px;
+  padding-bottom: 42px;
 }
 
 .form-field__name-input,
@@ -35,7 +60,7 @@
   padding-top: 14px;
   padding-bottom: 12px;
   margin-top: 6px;
-  margin-bottom: 18px;
+  // margin-bottom: 18px;
   font-family: inherit;
   font-size: 18px;
   line-height: 30px;
@@ -49,7 +74,8 @@
   padding-bottom: 0;
 }
 
-.form-field__title {
+.form-field__title,
+.form-field__legend-title {
   margin: 0;
   padding-bottom: 30px;
   text-align: center;
@@ -59,11 +85,20 @@
   text-transform: uppercase;
 }
 
+.form-field__legend-title {
+  display: none;
+}
+
+.form-field__title--contacts {
+  width: 280px;
+  text-align: center;
+}
+
 .form-field__checkbox-item,
 .form-field__radio-item {
   padding: 0;
   margin: 0;
-  padding-bottom: 40px;
+  // padding-bottom: 40px;
 }
 
 .form-field__description-checkbox,
@@ -85,6 +120,11 @@
 }
 
 .form-field__submit {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 128px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -113,8 +153,8 @@
 }
 
 .form-field__explanation {
-  margin-top: 36px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   .little-text;
   font-weight: 400;
@@ -123,4 +163,115 @@
 
 .form-field__explanation--asteriks {
   color: @pink;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field__field {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 576px;
+    margin-top: 54px;
+    background-color: @white;
+    border: 2px solid #e5e5e5;
+  }
+
+  .form-field__field:first-child {
+    width: 580px;
+    border: none;
+  }
+
+  .form-field__name-input,
+  .form-field__description {
+    display: flex;
+  }
+
+  .form-field__name-input {
+    margin-top: -15px;
+    margin-left: 20px;
+    flex-grow: 1;
+  }
+
+  .form-field__description {
+    padding: 0;
+  }
+
+  .form-field__item {
+    width: 620px;
+  }
+
+  .form-field__legend-title {
+    display: flex;
+    width: auto;
+    padding: 0 30px;
+    margin: 0 auto;
+    font-family: inherit;
+    line-height: 30px;
+  }
+
+  .form-field__title {
+    display: none;
+  }
+
+  .form-field__checkbox-list,
+  .form-field__radio-list {
+    margin-left: 0;
+  }
+
+  .form-field__field--name {
+    order: 1;
+  }
+
+  .form-field__field--application {
+    order: 2;
+  }
+
+  .form-field__field--contacts {
+    order: 3;
+  }
+
+  .form-field__field--checkbox {
+    order: 4;
+  }
+
+  .form-field__field--comment {
+    order: 5;
+  }
+
+  .form-field__submit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 6;
+    margin-top: 67px;
+    min-height: auto;
+  }
+
+  .form-field__submit-button {
+    height: 59px;
+    width: auto;
+    padding: 0 50px;
+  }
+
+  .form-field__explanation {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .form-field__comment {
+    display: flex;
+    width: 504px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .form-field__comment-field {
+    display: flex;
+    margin: 0 auto;
+    flex-grow: 1;
+  }
+
+  .form-field__contact-input {
+    order: 0;
+  }
 }

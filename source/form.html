@@ -15,7 +15,7 @@
         </div>
         <nav class="main-navigation">
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-navigation__wrapper"> <!--Обертка для позиционирования-->
+          <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
@@ -38,9 +38,9 @@
       <h1 class="page-title page-title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <section class="form-wrapper">
         <h2 class="visually-hidden">Форма отправки вашей истории</h2>
-        <p class="form-wrapper__information">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <p class="form-wrapper__information">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!<span class="form-wrapper__additional-information">Пожалуйста, заполните форму ниже:</span></p>
         <form class="form-wrapper__form form-field" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-field__field">
+          <fieldset class="form-field__field form-field__field--name">
             <legend class="visually-hidden">Ваше имя</legend>
             <ul class="form-field__list">
               <li class="form-field__item">
@@ -63,8 +63,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field form-field__field--grey">
-            <legend class="visually-hidden">Ваши достижения</legend>
+          <fieldset class="form-field__field form-field__field--grey form-field__field--checkbox">
+            <legend class="form-field__legend-title">Ваши безбашенные достижения в путешествии</legend>
             <p class="form-field__title">Ваши безбашенные достижения в путешествии</p>
             <ul class="form-field__checkbox-list">
               <li class="form-field__checkbox-item">
@@ -105,8 +105,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field">
-            <legend class="visually-hidden">Ваши контактные данные</legend>
+          <fieldset class="form-field__field form-field__field--contacts">
+            <legend class="form-field__legend-title">Ваши контактные данные</legend>
+            <p class="form-field__title form-field__title--contacts">Ваши контактные данные</p>
             <ul class="form-field__contacts-list">
               <li class="form-field__contacts-item">
                 <label class="form-field__description">
@@ -122,8 +123,8 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field form-field__field--grey">
-            <legend class="visually-hidden">Выбор приложения</legend>
+          <fieldset class="form-field__field form-field__field--grey form-field__field--application">
+            <legend class="form-field__legend-title">С каким приложением путешествовали?</legend>
             <p class="form-field__title">С каким приложением путешествовали?</p>
             <ul class="form-field__radio-list">
               <li class="form-field__radio-item">
@@ -146,9 +147,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-field__field">
-            <legend class="visually-hidden">Текстовый комментарий</legend>
-            <p class="form-field__title form-field__title--comment">Опишите свои эмоции</p>
+          <fieldset class="form-field__field form-field__field--comment">
+            <legend class="form-field__legend-title form-field__legend-title--comment">Опишите свои эмоции</legend>
+            <p class="form-field__title form-field__title-comment">Опишите свои эмоции</p>
             <p class="form-field__comment">
               <textarea class="form-field__comment-field" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
@@ -156,7 +157,7 @@
           <div class="form-field__submit">
             <button class="form-field__submit-button" type="submit">Отправить форму</button>
             <p class="form-field__explanation"><span class="form-field__explanation--asteriks">*</span> — обязательные поля</p>
-        </div>
+          </div>
         </form>
         <div class="submit-sucsess">
           <p class="submit-sucsess__title">Ваша заявка отправлена</p>
