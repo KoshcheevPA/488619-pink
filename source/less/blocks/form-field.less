@@ -165,6 +165,10 @@
   color: @pink;
 }
 
+.form-field__additional-explanation {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .form-field__field {
     display: flex;
@@ -174,11 +178,6 @@
     margin-top: 54px;
     background-color: @white;
     border: 2px solid #e5e5e5;
-  }
-
-  .form-field__field:first-child {
-    width: 580px;
-    border: none;
   }
 
   .form-field__name-input,
@@ -220,6 +219,8 @@
 
   .form-field__field--name {
     order: 1;
+    width: 580px;
+    border: none;
   }
 
   .form-field__field--application {
@@ -273,5 +274,74 @@
 
   .form-field__contact-input {
     order: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-field__field {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .form-field__field--name,
+  .form-field__field--application {
+    width: 460px;
+    padding: 0;
+    min-height: none;
+  }
+
+  .form-field__field--name {
+    margin-left: 0;
+  }
+
+  .form-field__list {
+    margin-left: 0;
+  }
+
+  .form-field__field--application {
+    margin-right: 0;
+  }
+
+  .form-field__item {
+    width: auto;
+  }
+
+  .form-field__field--contacts,
+  .form-field__field--checkbox,
+  .form-field__field--comment {
+    width: 920px;
+    min-height: auto;
+  }
+
+  .form-field__checkbox-list {
+    flex-direction: row;
+    min-height: auto;
+    justify-content: space-between;
+  }
+
+  .form-field__checkbox-item {
+    min-width: 260px;
+    margin-right: 18px;
+    text-align: center;
+  }
+
+  .form-field__checkbox-item:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  .form-field__comment {
+    display: flex;
+    width: 724px;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .form-field__submit {
+    width: 940px;
+    padding: 0;
+  }
+
+  .form-field__additional-explanation {
+    display: inline-block;
   }
 }

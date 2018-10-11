@@ -25,11 +25,28 @@
 
 @media (min-width: @tablet-width) {
   .form-wrapper__additional-information {
-    display: block;
+    display: inline-block;
   }
 
   .form-wrapper__information {
     width: 430px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-wrapper__form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0 auto;
+  }
+
+  .form-wrapper__information {
+    width: 610px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
