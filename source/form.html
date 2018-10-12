@@ -110,16 +110,12 @@
             <p class="form-field__title form-field__title--contacts">Ваши контактные данные</p>
             <ul class="form-field__contacts-list">
               <li class="form-field__contacts-item">
-                <label class="form-field__description">
-                  Номер телефона
-                  <input class="form-field__contact-input" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
-                </label>
+                <label class="form-field__description form-field__description--contacts" for="phone-number">Номер телефона</label>
+                <input class="form-field__contact-input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
               </li>
-              <li class="form-field__contacts-item">
-                <label class="form-field__description">
-                  Адрес почты
-                  <input class="form-field__contact-input" type="email" name="email" placeholder="Введите почту *" required>
-                </label>
+              <li class="form-field__contacts-item" for="email">
+                <label class="form-field__description form-field__description--contacts">Адрес почты</label>
+                <input class="form-field__contact-input" type="email" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
           </fieldset>

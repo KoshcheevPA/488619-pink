@@ -176,7 +176,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    width: 576px;
+    width: 620px;
+    padding: 0;
     margin-top: 54px;
     background-color: @white;
     border: 2px solid #e5e5e5;
@@ -203,7 +204,6 @@
 
   .form-field__legend-title {
     display: flex;
-    width: auto;
     padding: 0 30px;
     margin: 0 auto;
     font-family: inherit;
@@ -263,28 +263,49 @@
 
   .form-field__comment {
     display: flex;
-    width: 504px;
-    padding-left: 38px;
-    padding-right: 38px;
+    flex-grow: 1;
   }
 
   .form-field__comment-field {
     display: flex;
-    margin: 0 auto;
     flex-grow: 1;
+    margin: 0 auto;
+  }
+
+  .form-field__contacts-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+  }
+
+  .form-field__contacts-item {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    height: auto;
   }
 
   .form-field__contact-input {
     order: 0;
+    width: auto;
+    margin-bottom: 12px;
+  }
+
+  .form-field__description--contacts {
+    order: 1;
+    margin-left: 20px;
+  }
+
+  .form-field__checkbox-list,
+  .form-field__contacts-list,
+  .form-field__radio-list,
+  .form-field__comment {
+    padding: 25px 60px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form-field__field {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-
   .form-field__field--name,
   .form-field__field--application {
     width: 460px;
@@ -345,5 +366,16 @@
 
   .form-field__additional-explanation {
     display: inline-block;
+  }
+
+  .form-field__contacts-list {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: auto;
+  }
+
+  .form-field__contacts-item {
+    width: 45%;
+    flex-grow: 0;
   }
 }
