@@ -20,6 +20,14 @@
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover:not(.site-list__link--active) {
+    color: @pink;
+  }
+
+  &:active:not(.site-list__link--active) {
+    opacity: 0.3;
+  }
 }
 
 .site-list__item {
@@ -43,8 +51,22 @@
   }
 
   .site-list__link {
-    padding: 30px 10px;
+    padding: 30px 0;
     font-weight: 400;
     text-transform: none;
+
+    &:hover:not(.site-list__link--active) {
+      color: @pink;
+    }
+
+    &:active:not(.site-list__link--active) {
+      color: @white;
+      opacity: 0.3;
+    }
+  }
+
+  .site-list__link--active {
+    padding: 9px 0;
+    box-shadow: 0 2px 0 #ffffff;
   }
 }

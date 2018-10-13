@@ -5,7 +5,7 @@
   justify-content: space-between;
   border: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   padding-top: 40px;
   padding-bottom: 42px;
   padding-right: 20px;
@@ -132,9 +132,8 @@
 
 .form-field__submit-button {
   display: block;
-  width: 100%;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding: 12px 44px;
+  margin: 0 auto;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -170,6 +169,11 @@
   display: none;
 }
 
+.form-field__title--checkbox,
+.form-field__title--radio {
+  width: 250px;
+}
+
 @media (min-width: @tablet-width) {
   .form-field__field {
     display: flex;
@@ -178,28 +182,28 @@
     flex-direction: row;
     width: 620px;
     padding: 0;
+    margin: 0 auto;
     margin-top: 54px;
     background-color: @white;
     border: 2px solid #e5e5e5;
   }
 
-  .form-field__name-input,
-  .form-field__description {
-    display: flex;
-  }
-
   .form-field__name-input {
-    margin-top: -15px;
     margin-left: 20px;
     flex-grow: 1;
   }
 
   .form-field__description {
+    margin: auto;
     padding: 0;
   }
 
-  .form-field__item {
+  .form-field__list {
     width: 620px;
+  }
+
+  .form-field__item {
+    display: flex;
   }
 
   .form-field__legend-title {
@@ -245,6 +249,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 620px;
+    margin: 0 auto;
     order: 6;
     margin-top: 67px;
     min-height: auto;
@@ -253,6 +259,7 @@
   .form-field__submit-button {
     height: 59px;
     width: auto;
+    margin: 0;
     padding: 0 50px;
   }
 
@@ -308,7 +315,7 @@
 @media (min-width: @desktop-width) {
   .form-field__field--name,
   .form-field__field--application {
-    width: 460px;
+    width: 435px;
     padding: 0;
     min-height: none;
   }
@@ -318,7 +325,10 @@
   }
 
   .form-field__list {
+    width: 435px;
+    min-height: auto;
     margin-left: 0;
+    margin-top: 10px;
   }
 
   .form-field__field--application {
@@ -332,7 +342,7 @@
   .form-field__field--contacts,
   .form-field__field--checkbox,
   .form-field__field--comment {
-    width: 920px;
+    width: 940px;
     min-height: auto;
   }
 
@@ -343,9 +353,8 @@
   }
 
   .form-field__checkbox-item {
-    min-width: 260px;
+    width: 230px;
     margin-right: 18px;
-    text-align: center;
   }
 
   .form-field__checkbox-item:nth-of-type(3n) {
@@ -355,8 +364,8 @@
   .form-field__comment {
     display: flex;
     width: 724px;
-    padding-left: 38px;
-    padding-right: 38px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .form-field__submit {
@@ -375,7 +384,11 @@
   }
 
   .form-field__contacts-item {
-    width: 45%;
+    width: 46%;
     flex-grow: 0;
+  }
+
+  .form-field__radio-list {
+    padding: 30px 60px;
   }
 }

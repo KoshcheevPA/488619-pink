@@ -15,6 +15,7 @@
           </a>
         </div>
         <nav class="main-navigation">
+          <button class="main-navigation__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
@@ -28,7 +29,7 @@
                 <a class="site-list__link" href="form.html">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -107,8 +108,11 @@
         </ul>
       </section>
       <section class="share">
-        <h2 class="visually-hidden">Поделиться фотографией</h2>
-        <p class="share__deicription">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        <div class="share__text-wrapper">
+          <h2 class="visually-hidden">Поделиться фотографией</h2>
+          <p class="share__deicription">Затмите их всех!</p>
+          <p class="share__deicription">Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
         <div class="share__background-wrapper">
           <form class="share__form" action="https://echo.htmlacademy.ru" method="post">
             <img class="share__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="загружаемая фотография">

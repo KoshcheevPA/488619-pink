@@ -19,6 +19,15 @@
 .application-effect__link {
   text-decoration: underline;
   color: @pink;
+
+  &:hover {
+    color: @dark-blue;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -67,6 +76,11 @@
     border: 17px solid @pink;
     border-radius: 50%;
   }
+
+  .application-effect__title {
+    display: block;
+    width: 295px;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -88,5 +102,10 @@
 
   .application-effect__description {
     width: 580px;
+  }
+
+  .application-effect__title {
+    display: block;
+    width: auto;
   }
 }

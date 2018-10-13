@@ -1,6 +1,6 @@
 .tarif {
-  background-color: @grey;
   position: relative;
+  background-color: @grey;
 }
 
 .tarif__header {
@@ -45,7 +45,7 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-//
+
 .tarif__price {
   font-size: 24px;
   line-height: 30px;
@@ -54,7 +54,7 @@
   text-transform: uppercase;
 }
 
-.tarif__settings {
+.tarif__item {
   box-sizing: border-box;
   position: relative;
   padding-top: 12px;
@@ -108,7 +108,7 @@
   display: block;
   position: absolute;
   top: 55%;
-  left: 50%;
+  left: 85%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-image: url("../img/icon-yes.svg");
@@ -122,7 +122,7 @@
   display: block;
   position: absolute;
   top: 48%;
-  left: 50%;
+  left: 85%;
   transform: translate(-50%, -50%);
   background-repeat: no-repeat;
   background-image: url("../img/icon-no.svg");
@@ -173,7 +173,7 @@
     left: 8px;
   }
 
-  .tarif__settings {
+  .tarif__item {
     height: 45px;
     padding: 7px 22px;
     text-transform: none;
@@ -181,6 +181,11 @@
 
   .tarif__toggles {
     padding-bottom: 0;
+  }
+
+  .tarif__settings--on::before,
+  .tarif__settings--off::before {
+    left: 50%;
   }
 }
 
@@ -217,10 +222,10 @@
     height: 73px;
   }
 
-  .tarif__settings {
+  .tarif__item {
     height: 59px;
     font-size: 18px;
-    padding: 15px 40px;
+    padding: 15px 30px;
   }
 }
 
@@ -253,7 +258,7 @@
     background: transparent;
   }
 
-  .tarif__settings:first-of-type {
+  .tarif__item:first-of-type {
     position: absolute;
     margin-top: 2px;
     width: 190px;
@@ -266,15 +271,15 @@
     transform: translateX(0);
   }
 
-  .tarif__table--base .tarif__settings:first-of-type {
+  .tarif__table--base .tarif__item:first-child {
     transform: translateX(-20px);
   }
 
   .tarif__table--standard {
-    transform: translateX(-278px);
+    transform: translateX(-258px);
   }
 
-  .tarif__table--standard .tarif__settings:first-of-type {
+  .tarif__table--standard .tarif__item:first-child {
     transform: translateX(258px);
   }
 
@@ -282,7 +287,7 @@
     transform: translateX(-556px);
   }
 
-  .tarif__table--unlim .tarif__settings:first-of-type {
+  .tarif__table--unlim .tarif__item:first-child {
     position: absolute;
     transform: translateX(536px);
   }

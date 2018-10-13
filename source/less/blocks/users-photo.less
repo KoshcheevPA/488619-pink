@@ -1,17 +1,15 @@
 .users-photo {
-  // padding-left: 20px;
-  // padding-right: 20px;
   margin: 0 auto;
 }
 
 .users-photo__panorama {
-  // padding: 0;
+  position: relative;
 
   &::before {
     content: "Панорама дня";
     position: absolute;
     margin: 0;
-    left: 164px;
+    right: 20px;
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
@@ -28,6 +26,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-items: flex-start;
   padding: 0;
   padding-left: 18px;
   padding-right: 18px;
@@ -37,11 +36,15 @@
 
 .users-photo__image {
   display: flex;
-  width: 280px;
+  // max-width: 100%
+  // height: auto;
   margin: 0 auto;
 }
 
 .users-photo__description {
+  width: 280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
   text-align: center;
   .little-text;
@@ -81,8 +84,9 @@
 
 .users-photo__like-quantity {
   display: flex;
-  margin-top: 15px;
-  margin-bottom: 22px;
+  // margin-top: 15px;
+  margin-bottom: 24px;
+  align-self: flex-end;
   font-size: 12px;
   line-height: 24px;
   color: @pink;
@@ -90,11 +94,12 @@
 }
 
 .users-photo__like-button {
-  margin-top: 15px;
-  margin-bottom: 22px;
+  // margin-top: 15px;
+  margin-bottom: 24px;
   text-align: left;
   font-size: 12px;
   line-height: 24px;
+  align-self: flex-end;
   color: @pink;
   text-transform: uppercase;
   border: none;
@@ -151,24 +156,54 @@
   }
 
   .users-photo__like-quantity {
-    margin-top: 19px;
+    // margin-top: 19px;
   }
 
   .users-photo__image {
     height: 300px;
     width: 300px;
   }
+
+  .users-photo__panorama::before {
+    top: 58px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .users-photo__description {
-    width: 940px;
+    width: 575px;
   }
 
   .users-photo__post-text {
     &--panorama {
       width: 890px;
+      min-height: auto;
+      flex-direction: row;
+      padding: 20px;
     }
+  }
+
+  .users-photo__post-text--panorama .users-photo__like-button {
+    display: block;
+    order: 2;
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  .users-photo__post-text--panorama .users-photo__user-name {
+    order: 1;
+    width: 300px;
+    margin: 0;
+  }
+
+  .users-photo__post-text--panorama .users-photo__text {
+    order: 4;
+  }
+
+  .users-photo__post-text--panorama .users-photo__like-quantity {
+    display: block;
+    order: 3;
+    margin-right: 0;
   }
 
   .users-photo__list {
@@ -184,5 +219,10 @@
 
   .users-photo__image {
     height: 400px;
+  }
+
+  .users-photo__panorama::before {
+    right: 10px;
+    top: 54px;
   }
 }

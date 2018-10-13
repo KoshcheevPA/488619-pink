@@ -15,6 +15,7 @@
           </a>
         </div>
         <nav class="main-navigation">
+          <button class="main-navigation__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
           <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-navigation__wrapper">
             <ul class="main-navigation__list site-list">
@@ -28,7 +29,7 @@
                 <a class="site-list__link site-list__link--active">Конкурс</a>
               </li>
               <li class="site-list__item">
-                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+                <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
               </li>
             </ul>
           </div>
@@ -45,28 +46,22 @@
             <legend class="visually-hidden">Ваше имя</legend>
             <ul class="form-field__list">
               <li class="form-field__item">
-                <label class="form-field__description">
-                  Фамилия:
-                  <input class="form-field__name-input" type="text" name="surname" placeholder="Укажите фамилию *" required>
-                </label>
+                <label class="form-field__description" for="surname">Фамилия:</label>
+                <input class="form-field__name-input" type="text" name="surname" id="surname" placeholder="Укажите фамилию *" required>
               </li>
               <li class="form-field__item">
-                <label class="form-field__description">
-                  Имя:
-                <input class="form-field__name-input" type="text" name="name" placeholder="Введите ваше имя *" required>
-              </label>
+                <label class="form-field__description" for="name">Имя:</label>
+              <input class="form-field__name-input" type="text" name="name" id="name" placeholder="Введите ваше имя *" required>
               </li>
               <li class="form-field__item">
-                <label class="form-field__description">
-                  Отчество:
-                  <input class="form-field__name-input" type="text" name="patronymic" placeholder="Ну и отчество тоже">
-                </label>
+                <label class="form-field__description" for="patronymic">Отчество:</label>
+                <input class="form-field__name-input" type="text" name="patronymic" id="patronymic" placeholder="Ну и отчество тоже">
               </li>
             </ul>
           </fieldset>
           <fieldset class="form-field__field form-field__field--grey form-field__field--checkbox">
             <legend class="form-field__legend-title">Ваши безбашенные достижения в путешествии</legend>
-            <p class="form-field__title">Ваши безбашенные достижения в путешествии</p>
+            <p class="form-field__title form-field__title--checkbox">Ваши безбашенные достижения в путешествии</p>
             <ul class="form-field__checkbox-list">
               <li class="form-field__checkbox-item">
                 <label class="form-field__description-checkbox">
@@ -108,7 +103,6 @@
           </fieldset>
           <fieldset class="form-field__field form-field__field--contacts">
             <legend class="form-field__legend-title">Контактная информация</legend>
-            <p class="form-field__title form-field__title--contacts">Ваши контактные данные</p>
             <ul class="form-field__contacts-list">
               <li class="form-field__contacts-item">
                 <label class="form-field__description form-field__description--contacts" for="phone-number">Номер телефона</label>
@@ -122,7 +116,7 @@
           </fieldset>
           <fieldset class="form-field__field form-field__field--grey form-field__field--application">
             <legend class="form-field__legend-title">С каким приложением путешествовали?</legend>
-            <p class="form-field__title">С каким приложением путешествовали?</p>
+            <p class="form-field__title form-field__title--radio">С каким приложением путешествовали?</p>
             <ul class="form-field__radio-list">
               <li class="form-field__radio-item">
                 <label class="form-field__description-radio">

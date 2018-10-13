@@ -14,6 +14,24 @@
   background-color: transparent;
 }
 
+.main-navigation__toggle-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-repeat: none;
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: @tablet-width) {
+  .main-navigation__toggle-close {
+    top: 40px;
+  }
+}
 
 @media (min-width: @desktop-width) {
   .main-navigation__toggle {
@@ -24,5 +42,9 @@
     width: 680px;
     margin-left: auto;
     margin-right: 0;
+  }
+
+  .main-navigation__toggle-close {
+    display: none;
   }
 }

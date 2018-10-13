@@ -1,14 +1,23 @@
 .social__list {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   min-width: 180px;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
 }
 
 .social__item {
-  // display: inline-block;
+  padding: 0 6px;
+}
+
+.social__item:last-of-type {
+  margin-right: auto;
+}
+
+.social__item:first-of-type {
+  margin-left: auto;
 }
 
 .social__link {
@@ -19,6 +28,15 @@
   display: inline-block;
   border: 3px solid #e9ebec;
   border-radius: 50%;
+
+  &:hover {
+    border-color: @dark-blue;
+  }
+
+  &:active {
+    opacity: 0.1;
+    border-color: @dark-blue;
+  }
 }
 
 .social__link--twitter {
