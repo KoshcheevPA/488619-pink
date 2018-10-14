@@ -1,7 +1,25 @@
 .visible-header {
-  background-color: rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 10;
-  padding: 22px 20px;
-  margin-bottom: 50px;
+  padding: 19px 20px;
+  // display: block;
+  // background-color: none;
+  // position: relative;
+  // z-index: 10;
+  // padding: 22px 20px;
+  // margin: auto;
+  // margin-bottom: 50px;
+  // background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: @tablet-width) {
+  .visible-header {
+    // width: 620px;
+    padding: 41px 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .visible-header {
+    padding: 0;
+    // margin-left: auto;
+  }
 }

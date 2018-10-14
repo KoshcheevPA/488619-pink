@@ -1,36 +1,91 @@
 .page-title {
-  margin-top: -121px;
+  margin-top: -66px;
   padding-top: 176px;
-  padding-right: 62px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-color: #25323f;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title--main::after {
   content: "";
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 258px;
+  width: 320px;
   height: 286px;
+  margin: 0 auto;
   background-image: url("../img/iphone-hand-mobile@1x.png");
-  background-position: top;
+  background-repeat: no-repeat;
 }
 
 .page-title--form-page,
 .page-title--photo-page {
+  padding-top: 102px;
+  padding-bottom: 46px;
+  padding-left: 46px;
+  padding-right: 46px;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: @white;
-  padding-top: 102px;
-  padding-bottom: 46px;
-  padding-left: 46px;
-  padding-right: 46px;
 }
 
 .page-title--photo-page {
   padding-bottom: 76px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-title {
+    margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-title--main::after {
+    width: 640px;
+    height: 545px;
+    margin: 0 auto;
+    margin-left: none;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: -20px;
+  }
+
+  .page-title--form-page,
+  .page-title--photo-page {
+    padding-top: 160px;
+    padding-bottom: 95px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-title--photo-page {
+    padding-left: 152px;
+    padding-right: 152px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    margin-top: -114px;
+    padding-top: 185px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-title--main::after {
+    display: block;
+    width: 940px;
+    height: 645px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 35px;
+  }
+
+  .page-title--form-page,
+  .page-title--photo-page {
+    padding-top: 175px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 50px;
+    line-height: 60px;
+  }
 }

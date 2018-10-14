@@ -1,17 +1,34 @@
 .share__deicription {
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0;
+  margin: 0;
   .little-text;
 }
 
-.share__form {
+.share__text-wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.share__background-wrapper {
   background-color: @grey;
+}
+
+.share__form {
+  display: flex;
+  flex-direction: column;
   padding: 20px;
+  margin: 0 auto;
+}
+
+.share__image {
+  margin: 0 auto;
 }
 
 .share__button {
-  display: block;
+  display: inline-block;
   width: 100%;
   padding: 16px 91px;
   margin-bottom: 12px;
@@ -52,5 +69,90 @@
     background-color: @dark-blue;
     border-color: @dark-blue;
     opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .share__deicription {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .share__text-wrapper {
+    width: auto;
+    margin-top: 48px;
+    margin-bottom: 60px;
+  }
+
+  .share__image {
+    margin-left: 0;
+    width: 300px;
+    height: 400px;
+  }
+
+  .share__form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 620px;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .share__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 300px;
+    height: auto;
+  }
+
+  .share__button {
+    width: 90%;
+    height: 55px;
+    padding: 0;
+    margin: 0 auto;
+
+    &--submit {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .share {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .share__wrapper {
+    width: 410px;
+  }
+
+  .share__form {
+    width: 800px;
+    padding-left: 80px;
+    padding-right: 60px;
+    padding-top: 57px;
+    padding-bottom: 57px;
+  }
+
+  .share__button {
+    width: 45%;
+    height: 55px;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+
+    &--submit {
+      margin-right: auto;
+    }
+
+    &--cancel {
+      margin-left: auto;
+    }
   }
 }

@@ -1,0 +1,111 @@
+.application-effect__wrapper {
+  display: none;
+  padding-right: 20px;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.application-effect__title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.application-effect__text {
+  color: @dark-blue;
+}
+
+.application-effect__link {
+  text-decoration: underline;
+  color: @pink;
+
+  &:hover {
+    color: @dark-blue;
+  }
+
+  &:active {
+    text-decoration: none;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .application-effect__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding-top: 25px;
+    padding-bottom: 67px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .application-effect__description {
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 310px;
+    padding-top: 72px;
+  }
+
+  .application-effect__timer {
+    width: 300px;
+    height: 345px;
+    margin-left: -30px;
+    text-align: center;
+    font-size: 120px;
+    line-height: 120px;
+    font-weight: bold;
+    color: @pink;
+    background-image: url("../img/icon-timer.svg");
+    background-repeat: no-repeat;
+    transform: scale(0.8);
+  }
+
+  .application-effect__number {
+    display: block;
+    width: 210px;
+    height: 120px;
+    padding: 0;
+    margin-left: 27px;
+    padding-top: 35px;
+    padding-bottom: 48px;
+    margin-top: 79px;
+    border: 17px solid @pink;
+    border-radius: 50%;
+  }
+
+  .application-effect__title {
+    display: block;
+    width: 295px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application-effect {
+    background-color: @grey;
+  }
+
+  .application-effect__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .application-effect__timer {
+    width: 360px;
+    margin: 0;
+    transform: none;
+  }
+
+  .application-effect__description {
+    width: 580px;
+  }
+
+  .application-effect__title {
+    display: block;
+    width: auto;
+  }
+}
