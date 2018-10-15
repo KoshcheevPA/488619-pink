@@ -7,7 +7,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
-    <header class="page-header">
+    <header class="page-header page-header--menu-closed page-header--nojs">
       <div class="page-header__wrapper">
         <div class="visible-header">
           <a class="visible-header__logo-link" href="index.html">
@@ -15,10 +15,9 @@
           </a>
         </div>
         <nav class="main-navigation">
-          <button class="main-navigation__toggle-close" type="button"><span class="visually-hidden">Закрыть меню</span></button>
-          <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-navigation__toggle main-navigation__toggle--opened main-navigation__toggle--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-navigation__wrapper">
-            <ul class="main-navigation__list site-list">
+            <ul class="main-navigation__list site-list  site-list--closed site-list--nojs">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
               </li>
@@ -61,7 +60,6 @@
           </fieldset>
           <fieldset class="form-field__field form-field__field--grey form-field__field--checkbox">
             <legend class="form-field__legend-title">Ваши безбашенные достижения в путешествии</legend>
-            <p class="form-field__title form-field__title--checkbox">Ваши безбашенные достижения в путешествии</p>
             <ul class="form-field__checkbox-list">
               <li class="form-field__checkbox-item">
                 <label class="form-field__description-checkbox">
@@ -116,7 +114,6 @@
           </fieldset>
           <fieldset class="form-field__field form-field__field--grey form-field__field--application">
             <legend class="form-field__legend-title">С каким приложением путешествовали?</legend>
-            <p class="form-field__title form-field__title--radio">С каким приложением путешествовали?</p>
             <ul class="form-field__radio-list">
               <li class="form-field__radio-item">
                 <label class="form-field__description-radio">
@@ -140,7 +137,6 @@
           </fieldset>
           <fieldset class="form-field__field form-field__field--comment">
             <legend class="form-field__legend-title form-field__legend-title--comment">Опишите свои эмоции</legend>
-            <p class="form-field__title form-field__title-comment">Опишите свои эмоции</p>
             <p class="form-field__comment">
               <textarea class="form-field__comment-field" name="comment" id="comment-field" rows="5" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </p>
@@ -196,5 +192,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>

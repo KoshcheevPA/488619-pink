@@ -70,3 +70,14 @@
     box-shadow: 0 2px 0 #ffffff;
   }
 }
+
+@media (max-width: @mobile-and-tablet-width) {
+  .site-list--closed {
+    display: none;
+  }
+
+  .site-list--opened,
+  .site-list--nojs {
+    display: block;
+  }
+}

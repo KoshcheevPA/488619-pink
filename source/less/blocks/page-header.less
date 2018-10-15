@@ -2,6 +2,7 @@
   position: relative;
   z-index: 20;
   // background-color: rgba(0, 0, 0, 0.3);
+  // background-color: rgba(29, 38, 49, 0.3);
   background-color: @dark-blue;
 }
 
@@ -30,5 +31,16 @@
     flex-direction: row;
     width: 940px;
     padding: 41px 10px;
+  }
+}
+
+@media (max-width: @mobile-and-tablet-width) {
+  .page-header--menu-closed {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .page-header--menu-opened,
+  .page-header--nojs {
+    background-color: @dark-blue;
   }
 }

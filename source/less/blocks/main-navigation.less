@@ -5,7 +5,10 @@
 }
 
 .main-navigation__toggle {
-  display: none;
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
   width: 50px;
   height: 24px;
   font-size: 0;
@@ -14,21 +17,8 @@
   background-color: transparent;
 }
 
-.main-navigation__toggle-close {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  width: 24px;
-  height: 24px;
-  font-size: 0;
-  background-image: url("../img/icon-menu-cross.svg");
-  background-repeat: none;
-  border: none;
-  background-color: transparent;
-}
-
 @media (min-width: @tablet-width) {
-  .main-navigation__toggle-close {
+  .main-navigation__toggle {
     top: 40px;
   }
 }
@@ -46,5 +36,25 @@
 
   .main-navigation__toggle-close {
     display: none;
+  }
+}
+
+@media (max-width: @mobile-and-tablet-width) {
+  .main-navigation__toggle--closed,
+  .main-navigation__toggle--nojs {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-menu-cross.svg");
+    background-repeat: none;
+    border: none;
+    background-color: transparent;
+  }
+
+  .main-navigation__toggle--opened {
+    display: block;
+    background-image: url("../img/icon-menu-burger.svg");
+    border: none;
+    background-color: transparent;
   }
 }
