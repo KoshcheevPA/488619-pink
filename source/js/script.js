@@ -3,6 +3,8 @@ var navToggle = document.querySelector('.main-navigation__toggle');
 var siteList = document.querySelector('.site-list');
 var headerColor = document.querySelector('.page-header');
 
+var map = document.querySelector('.contacts__map');
+
 navMain.classList.remove('main-nav--nojs');
 navToggle.classList.remove('main-navigation__toggle--nojs')
 siteList.classList.remove('site-list--nojs');
@@ -18,9 +20,6 @@ navToggle.addEventListener('click', function() {
 
     headerColor.classList.remove('page-header--menu-closed');
     headerColor.classList.add('page-header--menu-opened');
-    // siteList.classList.remove('main-navigation__toggle--close');
-    // siteList.classList.add('main-navigation__toggle--open');
-
   } else {
     siteList.classList.add('site-list--closed');
     siteList.classList.remove('site-list--opened');
@@ -32,3 +31,10 @@ navToggle.addEventListener('click', function() {
     headerColor.classList.remove('page-header--menu-opened');
   }
 });
+
+function initMap() {
+       map = new google.maps.Map(document.querySelector('.contacts__map'), {
+         center: {lat: 59.938631, lng: 30.323055},
+         zoom: 16
+       });
+     }
