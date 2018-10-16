@@ -7,6 +7,8 @@
 
   &::after {
     content: "";
+    position: relative;
+    z-index: 15;
     margin-left: auto;
     margin-right: auto;
     width: 157px;
@@ -23,6 +25,7 @@
 }
 
 .application-functions__additionally-information {
+  position: relative;
   width: 100%;
   padding-top: 28px;
   font-size: 24px;
@@ -30,6 +33,19 @@
   font-weight: 300;
   color: @dark-blue;
   background-color: @white;
+
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -75px;
+    left: 0;
+    background: url("../img/bg-triangle-white.svg") no-repeat center bottom;
+    width: 100%;
+    height: 75px;
+    z-index: 0;
+  }
 }
 
 .application-functions__list {
@@ -44,18 +60,6 @@
   padding-left: 30px;
   padding-right: 30px;
   list-style: none;
-
-  &::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: url("../img/bg-triangle-white.svg") no-repeat center bottom;
-    width: 100%;
-    height: 75px;
-    z-index: 0;
-  }
 }
 
 .application-functions__item {
@@ -83,7 +87,8 @@
   .application-functions__additionally-information {
     width: 100%;
     margin: 0 auto;
-    padding-top: 55px;
+    padding-top: 43px;
+    padding-bottom: 40px;
     font-size: 40px;
     line-height: 48px;
   }
@@ -109,11 +114,18 @@
   }
 
   .application-functions__list {
+    flex-direction: column;
+    justify-content: flex-start;
     text-align: left;
     width: 310px;
     padding: 0;
-    margin-right: auto;
+    margin: 0 auto;
+    margin-top: 81px;
     order: 2;
+  }
+
+  .application-functions__item:not(:last-of-type) {
+    padding-bottom: 34px;
   }
 }
 

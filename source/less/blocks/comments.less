@@ -9,7 +9,8 @@
 .comments__list {
   display: flex;
   margin: 0;
-  padding: 27px 20px;
+  margin-top: 10px;
+  padding: 27px 0;
 }
 
 .comments__item {
@@ -23,7 +24,7 @@
 .comments__title {
   padding: 0;
   margin: 0;
-  margin-top: 12px;
+  margin-top: 14px;
   margin-bottom: 11px;
   font-size: 18px;
   line-height: 34px;
@@ -42,7 +43,7 @@
 
 .comments__toggles {
   text-align: center;
-  margin: 7px 0;
+  margin: 6px 0;
   background-color: @grey;
 }
 
@@ -58,6 +59,8 @@
   }
 
   .comments__title {
+    margin: 0;
+    margin-top: 36px;
     font-size: 20px;
     line-height: 30px;
     order: 2;
@@ -66,6 +69,11 @@
   .comments__user-description {
     display: block;
     order: 3;
+  }
+
+  .comments__toggles {
+    margin: 0;
+    margin-top: 8px;
   }
 }
 
