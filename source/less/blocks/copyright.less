@@ -12,10 +12,20 @@
   display: inline-block;
   width: 28px;
   height: 28px;
-  background-image: url("../img/htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: bottom right;
   transform: scale(1.4);
+}
+
+.copyright__image {
+  fill: @pink;
+
+  &:hover {
+    fill: @dark-blue;
+  }
+
+  &:active {
+    fill: @dark-blue;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @desktop-width) {
