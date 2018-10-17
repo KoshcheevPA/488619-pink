@@ -131,7 +131,7 @@
 
 @media (min-width: @desktop-width) {
   .application-functions__additionally-information {
-    padding-top: 75px;
+    padding-top: 69px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -157,14 +157,19 @@
     width: 940px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 34px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
   }
 
   .application-functions__item {
-    width: 292px;
-    margin: 0 auto;
+    width: 300px;
+    margin: 0;
+
+    &:not(:last-of-type) {
+      margin-right: 5px;
+    }
 
     &--first::before {
       content: "";
@@ -198,12 +203,16 @@
   }
 
   .application-functions__title {
-    padding-top: 50px;
+    padding: 0;
+    margin-top: 55px;
+    margin-bottom: 24px;
     font-size: 30px;
     line-height: 30px;
   }
 
   .application-functions__description {
+    width: 248px;
+    margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
   }

@@ -40,7 +40,8 @@
 @media (min-width: @desktop-width) {
   .site-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     background-color: inherit;
   }
 
@@ -48,6 +49,10 @@
     padding: 0;
     box-shadow: none;
     background-color: inherit;
+
+    &:not(:nth-of-type(4n)) {
+      margin-right: 80px;
+    }
   }
 
   .site-list__link {
