@@ -491,19 +491,27 @@
     min-height: none;
   }
 
+  .form-field__checkbox-list,
+  .form-field__contacts-list,
+  .form-field__radio-list,
+  .form-field__comment {
+    padding: 25px 57px;
+  }
+
   .form-field__field--name {
     margin-left: 0;
   }
 
   .form-field__list {
-    width: 415px;
+    width: 435px;
     min-height: auto;
-    height: 95%;
     margin-left: 0;
-    margin-top: 10px;
+    padding-left: 0;
+    margin-top: 21px;
   }
 
   .form-field__field--application {
+    width: 432px;
     margin-right: 0;
   }
 
@@ -523,25 +531,46 @@
     flex-direction: row;
     min-height: auto;
     justify-content: space-between;
+    padding-top: 41px;
+    padding-bottom: 8px;
   }
 
   .form-field__checkbox-item {
-    width: 230px;
-    margin-right: 18px;
+    // width: 259px;
+    // margin-right: 18px;
   }
 
-  .form-field__checkbox-item:nth-of-type(3n) {
-    margin-right: 0;
+  .form-field__checkbox-item:nth-of-type(2) {
+    order: 4;
+  }
+
+  .form-field__checkbox-item:nth-of-type(3) {
+    order: 2;
+  }
+
+  .form-field__checkbox-item:nth-of-type(4) {
+    order: 5;
+  }
+
+  .form-field__checkbox-item:nth-of-type(5) {
+    order: 3;
+  }
+
+  .form-field__checkbox-item:nth-of-type(6) {
+    order: 6;
   }
 
   .form-field__comment {
     display: flex;
-    width: 840px;
+    width: 820px;
+    padding-bottom: 44px;
   }
 
   .form-field__submit {
     width: 940px;
     padding: 0;
+    margin-top: 13px;
+    margin-bottom: 3px;
   }
 
   .form-field__additional-explanation {
@@ -554,6 +583,8 @@
     justify-content: space-between;
     flex-grow: 1;
     min-height: auto;
+    padding-top: 27px;
+    padding-bottom: 13px;
   }
 
   .form-field__contacts-item {
@@ -562,7 +593,28 @@
   }
 
   .form-field__radio-list {
-    width: 315px;
-    padding: 30px 60px;
+    width: 280px;
+    padding: 0;
+    // padding: 30px 60px;
+    padding-top: 44px;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+
+  .form-field__radio-item:not(:last-of-type) {
+    margin-bottom: 44px;
+  }
+
+  .form-field__description--contacts {
+    margin: 0;
+    margin-left: 20px;
+  }
+
+  .form-field__contacts-item:not(:last-of-type) {
+    margin: 0;
+  }
+
+  .form-field__comment-field {
+    height: 98px;
   }
 }
