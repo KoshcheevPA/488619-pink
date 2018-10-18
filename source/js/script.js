@@ -32,9 +32,9 @@ navToggle.addEventListener('click', function() {
   }
 });
 
-function initMap() {
-       map = new google.maps.Map(document.querySelector('.contacts__map'), {
-         center: {lat: 59.938631, lng: 30.323055},
-         zoom: 16
-       });
-     }
+// function initMap() {
+       // map = new google.maps.Map(document.querySelector('.contacts__map'), {
+         // center: {lat: 59.938631, lng: 30.323055},
+         // zoom: 16
+       // });
+     // }
