@@ -41,8 +41,35 @@
   }
 }
 
+.slider__toggle-arrow {
+  display: none;
+}
+
 @media (min-width: @desktop-width) {
   .slider__wrapper {
+    position: relative;
+    top: -194px;
+    margin: 0;
+    width: auto;
+  }
+
+  .slider__toggle {
     display: none;
+  }
+
+  .slider__toggle-arrow--right {
+    margin-right: 0;
+  }
+
+  .slider__toggle-arrow {
+    fill: rgba(40, 50, 69, 0.3);
+
+    &:hover {
+      fill: rgba(40, 50, 69, 0.6);
+    }
+
+    &:active {
+      fill: rgba(40, 50, 69, 0.1);
+    }
   }
 }
