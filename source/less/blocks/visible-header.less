@@ -11,11 +11,11 @@
   fill: @white;
 }
 
-.visible-header__logo-link:hover .visible-header__logo-image {
+.visible-header__logo-link:hover:not(.visible-header__logo-link--main) .visible-header__logo-image {
   fill: @pink;
 }
 
-.visible-header__logo-link:active .visible-header__logo-image {
+.visible-header__logo-link:active:not(.visible-header__logo-link--main) .visible-header__logo-image {
   fill: @white;
   opacity: 0.3;
 }
