@@ -2,6 +2,8 @@
   display: flex;
   margin: 0;
   padding: 0;
+  margin-top: 25px;
+  margin-bottom: 23px;
   margin-left: auto;
   margin-right: auto;
   justify-content: space-around;
@@ -14,10 +16,10 @@
 }
 
 .supported-platforms__link {
-  width: 47px;
-  height: 56px;
+  width: 44px;
+  height: 62px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
 }
 
 .supported-platforms__link--apple {
@@ -30,4 +32,18 @@
 
 .supported-platforms__link--windows {
   background-image: url("../img/logo-microsoft.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .supported-platforms {
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .supported-platforms {
+    margin-top: 61px;
+    margin-bottom: 55px;
+  }
 }

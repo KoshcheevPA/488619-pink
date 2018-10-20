@@ -9,20 +9,24 @@
 .comments__list {
   display: flex;
   margin: 0;
-  padding: 0;
+  margin-top: 10px;
+  padding: 27px 0;
 }
 
 .comments__item {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0;
-  padding: 45px 0;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .comments__title {
   padding: 0;
   margin: 0;
+  margin-top: 4px;
+  margin-bottom: 11px;
   font-size: 18px;
   line-height: 34px;
 }
@@ -40,6 +44,7 @@
 
 .comments__toggles {
   text-align: center;
+  margin: 6px 0;
   background-color: @grey;
 }
 
@@ -55,6 +60,8 @@
   }
 
   .comments__title {
+    margin: 0;
+    margin-top: 36px;
     font-size: 20px;
     line-height: 30px;
     order: 2;
@@ -64,17 +71,42 @@
     display: block;
     order: 3;
   }
+
+  .comments__toggles {
+    margin: 0;
+    margin-top: 8px;
+  }
+
+  .comments__item {
+    width: auto;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .comments__wrapper {
     width: 940px;
     padding: 0 10px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      z-index: 15;
+      bottom: 271px;
+      left: 443px;
+      width: 80px;
+      height: 65px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url("../img/icon-quotes.svg");
+      background-position: top;
+      background-repeat: no-repeat;
+    }
   }
 
   .comments__message {
     order: 1;
-    padding: 0 120px;
+    width: 700px;
   }
 
   .comments__title {
@@ -87,5 +119,47 @@
     display: block;
     font-size: 18px;
     order: 3;
+  }
+
+  .comments__list {
+    position: relative;
+    z-index: 10;
+    width: 880px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 160px;
+  }
+
+  .comments__item {
+    position: relative;
+
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 15;
+    //   top: 27px;
+    //   left: 0;
+    //   width: 80px;
+    //   height: 65px;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    //   background-image: url("../img/icon-review-arrow-left.svg");
+    //   background-repeat: no-repeat;
+    // }
+
+    // &::after {
+    //   content: "";
+    //   position: absolute;
+    //   z-index: 15;
+    //   top: 27px;
+    //   right: 0;
+    //   width: 80px;
+    //   height: 65px;
+    //   margin-left: auto;
+    //   margin-right: auto;
+    //   background-image: url("../img/icon-review-arrow-right.svg");
+    //   background-repeat: no-repeat;
+    //   background-position: right top;
+    // }
   }
 }
