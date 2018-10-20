@@ -29,7 +29,7 @@
                 </g>
               </g>
             </svg>
-            <svg class="main-navigation__image main-navigation__image--cross" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+            <svg class="main-navigation__image main-navigation__image--cross" version="1.0" id="Layer_1-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.867px" height="23.867px" viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
               <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
             </svg>
           </button>
@@ -53,7 +53,9 @@
       </div>
     </header>
     <main class="page-form">
-      <h1 class="page-title page-title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-title page-title--form-page">
+        <h1 class="page-title__text">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
       <section class="form-wrapper">
         <h2 class="visually-hidden">Форма отправки вашей истории</h2>
         <p class="form-wrapper__information">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="form-wrapper__additional-information">Пожалуйста, заполните форму ниже:</span></p>
@@ -123,8 +125,8 @@
                 <label class="form-field__description form-field__description--contacts" for="phone-number">Номер телефона</label>
                 <input class="form-field__contact-input" type="tel" name="phone-number" id="phone-number" placeholder="Номер, пожалуйста">
               </li>
-              <li class="form-field__contacts-item" for="email">
-                <label class="form-field__description form-field__description--contacts">Адрес почты</label>
+              <li class="form-field__contacts-item">
+                <label class="form-field__description form-field__description--contacts" for="email">Адрес почты</label>
                 <input class="form-field__contact-input" type="email" name="email" id="email" placeholder="Введите почту *" required>
               </li>
             </ul>
