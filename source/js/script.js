@@ -36,18 +36,27 @@ navToggle.addEventListener('click', function() {
     headerColor.classList.add('page-header--menu-closed');
     headerColor.classList.remove('page-header--menu-opened');
 
-
     cross.classList.remove('main-navigation__image--opened');
     burger.classList.add('main-navigation__image--opened');
   }
 });
-//
-// if (navToggle.classList.contains('main-navigation__toggle--opened')) {
-//   cross.classList.remove('main-navigation__image--opened');
-//   cross.classList.add('main-navigation__image--closed');
-//   burger.classList.add('main-navigation__image--opened');
-// } else if (navToggle.classList.contains('main-navigation__toggle--closed')) {
-//   cross.classList.add('main-navigation__image--opened');
-//   burger.classList.remove('main-navigation__image--opened');
-//   burger.classList.add('main-navigation__image--closed');
-// }
+
+
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.938631, 30.323055],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки',
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: './img/icon-map-marker.svg',
+            iconImageSize: [35, 35]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark)
+});
