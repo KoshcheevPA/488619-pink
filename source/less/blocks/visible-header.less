@@ -11,11 +11,11 @@
   fill: @white;
 }
 
-.visible-header__logo-link:hover:not(.visible-header__logo-link--main) .visible-header__logo-image {
+.visible-header__logo-link:hover[href] .visible-header__logo-image {
   fill: @pink;
 }
 
-.visible-header__logo-link:active:not(.visible-header__logo-link--main) .visible-header__logo-image {
+.visible-header__logo-link:active[href] .visible-header__logo-image {
   fill: @white;
   opacity: 0.3;
 }
@@ -23,8 +23,8 @@
 @media (min-width: @tablet-width) {
   .visible-header {
     padding: 0 20px;
-    padding-top: 27px;
-    padding-bottom: 42px;
+    padding-top: 24px;
+    padding-bottom: 40px;
   }
 
   .visible-header__logo-image--mobile {
@@ -32,7 +32,7 @@
   }
 
   .visible-header__logo-image--tablet {
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -40,7 +40,7 @@
   .visible-header {
     padding: 0;
     padding-top: 27px;
-    padding-bottom: 42px;
+    padding-bottom: 36px;
   }
 
   .visible-header__logo-image--tablet,
@@ -49,6 +49,6 @@
   }
 
   .visible-header__logo-image--desktop {
-    display: block;
+    display: inline-block;
   }
 }
