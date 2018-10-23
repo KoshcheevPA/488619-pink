@@ -9,9 +9,11 @@ var cross =  document.querySelector('.main-navigation__image--cross');
 var map = document.querySelector('.contacts__map');
 
 navMain.classList.remove('main-nav--nojs');
-navToggle.classList.remove('main-navigation__toggle--nojs')
+navToggle.classList.remove('main-navigation__toggle--nojs');
 siteList.classList.remove('site-list--nojs');
-headerColor.classList.remove('page-header--nojs');;
+headerColor.classList.remove('page-header--nojs');
+cross.classList.remove('main-navigation__image--nojs');
+burger.classList.remove('main-navigation__image--nojs');
 
 navToggle.addEventListener('click', function() {
   if (siteList.classList.contains('site-list--closed')) {
@@ -50,7 +52,7 @@ ymaps.ready(function () {
             searchControlProvider: 'yandex#search'
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки',
+            hintContent: 'Мы здесь!',
         }, {
             iconLayout: 'default#image',
             iconImageHref: './img/icon-map-marker.svg',
