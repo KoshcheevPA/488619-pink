@@ -6,8 +6,6 @@ var headerColor = document.querySelector('.page-header');
 var burger =  document.querySelector('.main-navigation__image--burger');
 var cross =  document.querySelector('.main-navigation__image--cross');
 
-var map = document.querySelector('.contacts__map');
-
 var emailUser = document.querySelector('[name=email]');
 var nameUser = document.querySelector('[name=name]');
 var surnameUser = document.querySelector('[name=surname]');
@@ -75,7 +73,6 @@ popupButtonUnsucsess.addEventListener('click', function (evt) {
   popupFailMessage.classList.remove('submit-unsucsess--opened');
 });
 
-
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
             center: [59.938631, 30.323055],
@@ -84,7 +81,7 @@ ymaps.ready(function () {
             searchControlProvider: 'yandex#search'
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Мы здесь!',
+            hintContent: 'Собственный значок метки'
         }, {
             iconLayout: 'default#image',
             iconImageHref: './img/icon-map-marker.svg',
@@ -92,5 +89,5 @@ ymaps.ready(function () {
         });
 
     myMap.geoObjects
-        .add(myPlacemark)
+        .add(myPlacemark);
 });
