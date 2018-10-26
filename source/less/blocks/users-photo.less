@@ -8,16 +8,16 @@
   &::before {
     content: "Панорама дня";
     position: absolute;
-    margin: 0;
+    z-index: 1;
     right: 20px;
+    padding: 6px 20px;
+    margin: 0;
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
     color: @white;
     text-transform: uppercase;
     background-color: @pink;
-    padding: 6px 20px;
-    z-index: 1;
   }
 }
 
@@ -99,12 +99,9 @@
   padding: 0;
   width: 15px;
   height: 20px;
-  // margin-left: 33px;
   margin-top: 14px;
-  // text-align: right;
   font-size: 12px;
   line-height: 24px;
-  // align-self: flex-end;
   color: @pink;
   text-transform: uppercase;
   border: none;
@@ -112,17 +109,6 @@
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
   background-position: center;
-
-  &::before {
-    // content: "";
-    // position: absolute;
-    // top: 7px;
-    // right: 80px;
-    // width: 13px;
-    // height: 13px;
-    // background-image: url("../img/icon-heart.svg");
-    // background-repeat: no-repeat;
-  }
 }
 
 .users-photo__list {
@@ -149,10 +135,10 @@
   }
 
   .users-photo__post-text {
-    width: 247px;
+    position: relative;
     display: flex;
     align-content: flex-start;
-    position: relative;
+    width: 247px;
     min-height: 108px;
     padding-left: 28px;
     padding-right: 25px;
@@ -237,25 +223,25 @@
 
   .users-photo__post-text--panorama {
     position: relative;
-    width: 885px;
-    min-height: auto;
     flex-direction: row;
+    min-height: auto;
+    width: 885px;
     padding: 23px 27px;
 
     &::before {
       content: "Панорама дня";
       position: absolute;
+      z-index: 1;
+      top: -451px;
       margin: 0;
       right: 0;
-      top: -451px;
+      padding: 6px 20px;
       font-size: 12px;
       line-height: 24px;
       font-weight: 700;
       color: @white;
       text-transform: uppercase;
       background-color: @pink;
-      padding: 6px 20px;
-      z-index: 1;
     }
   }
 
