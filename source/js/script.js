@@ -6,8 +6,6 @@ var headerColor = document.querySelector('.page-header');
 var burger =  document.querySelector('.main-navigation__image--burger');
 var cross =  document.querySelector('.main-navigation__image--cross');
 
-var map = document.querySelector('.contacts__map');
-
 navMain.classList.remove('main-nav--nojs');
 navToggle.classList.remove('main-navigation__toggle--nojs');
 siteList.classList.remove('site-list--nojs');
@@ -41,24 +39,4 @@ navToggle.addEventListener('click', function() {
     cross.classList.remove('main-navigation__image--opened');
     burger.classList.add('main-navigation__image--opened');
   }
-});
-
-
-ymaps.ready(function () {
-    var myMap = new ymaps.Map('map', {
-            center: [59.938631, 30.323055],
-            zoom: 16
-        }, {
-            searchControlProvider: 'yandex#search'
-        }),
-        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Мы здесь!',
-        }, {
-            iconLayout: 'default#image',
-            iconImageHref: './img/icon-map-marker.svg',
-            iconImageSize: [35, 35]
-        });
-
-    myMap.geoObjects
-        .add(myPlacemark)
 });
