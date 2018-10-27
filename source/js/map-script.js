@@ -1,0 +1,18 @@
+ymaps.ready(function () {
+    var myMap = new ymaps.Map('map', {
+            center: [59.938631, 30.323055],
+            zoom: 16
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+        myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+            hintContent: 'Собственный значок метки'
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: './img/icon-map-marker.svg',
+            iconImageSize: [35, 35]
+        });
+
+    myMap.geoObjects
+        .add(myPlacemark);
+});
