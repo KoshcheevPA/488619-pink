@@ -6,7 +6,7 @@ ymaps.ready(function () {
             searchControlProvider: 'yandex#search'
         }),
         myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-            hintContent: 'Собственный значок метки'
+            hintContent: ''
         }, {
             iconLayout: 'default#image',
             iconImageHref: './img/icon-map-marker.svg',

@@ -74,8 +74,10 @@
           <div class="users-photo__post-text users-photo__post-text--panorama">
             <b class="users-photo__user-name">Анна<span class="users-photo__time"> (5 минут назад)</span></b>
             <p class="users-photo__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <button class="users-photo__like-button"></button>
-            <span class="users-photo__like-quantity">Нравится: 215</span>
+            <div class="users-photo__like-wrapper users-photo__like-wrapper--panorama">
+              <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+              <span class="users-photo__like-quantity">Нравится: 215</span>
+            </div>
           </div>
         </div>
         <ul class="users-photo__list">
@@ -93,8 +95,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Левон<span class="users-photo__time"> (5 часов назад)</span></b>
               <p class="users-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 356</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 356</span>
+              </div>
             </div>
           </li>
           <li class="users-photo__list-item">
@@ -111,8 +115,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Антон<span class="users-photo__time"> (12 часов назад)</span></b>
               <p class="users-photo__text">Соседи будут рады!</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 666</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 666</span>
+              </div>
             </div>
           </li>
           <li class="users-photo__list-item">
@@ -129,8 +135,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Борис<span class="users-photo__time"> (20 часов назад)</span></b>
               <p class="users-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 215</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 215</span>
+              </div>
             </div>
           </li>
           <li class="users-photo__list-item">
@@ -147,8 +155,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Сергей<span class="users-photo__time"> (25 часов назад)</span></b>
               <p class="users-photo__text">Самая кубанская в мире!</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 4</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 4</span>
+              </div>
             </div>
           </li>
           <li class="users-photo__list-item">
@@ -165,8 +175,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Максим<span class="users-photo__time"> (40 часов назад)</span></b>
               <p class="users-photo__text">Где снег-то?</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 150</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 150</span>
+              </div>
             </div>
           </li>
           <li class="users-photo__list-item">
@@ -183,8 +195,10 @@
             <div class="users-photo__post-text">
               <b class="users-photo__user-name">Надежда<span class="users-photo__time"> (45 часов назад)</span></b>
               <p class="users-photo__text">Всем GM и взаимные лайки!</p>
-              <button class="users-photo__like-button"></button>
-              <span class="users-photo__like-quantity">Нравится: 2560</span>
+              <div class="users-photo__like-wrapper">
+                <button class="users-photo__like-button"><span class="visually-hidden">Лайк</span></button>
+                <span class="users-photo__like-quantity">Нравится: 2560</span>
+              </div>
             </div>
           </li>
         </ul>
@@ -276,7 +290,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__image" width="27" height="27">
+            <svg class="copyright__image" width="27" height="35">
               <use xlink:href="#logo-htmlacademy"></use>
             </svg>
             <span class="visually-hidden">HTML Academy</span>
@@ -284,6 +298,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/picturefill.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
