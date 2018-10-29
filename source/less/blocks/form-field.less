@@ -157,10 +157,10 @@
   margin-bottom: 46px;
 }
 
-.form-field__checkbox,
-.form-field__radio {
-  display: none;
-}
+// .form-field__checkbox,
+// .form-field__radio {
+// display: none;
+// }
 
 .form-field__checkbox:checked + .form-field__description-checkbox::before {
   background-image: url("../img/icon-checkbox.svg");
@@ -179,6 +179,15 @@
   height: 15px;
   background-color: @pink;
   border-radius: 50%;
+}
+
+
+.form-field__radio:focus + .form-field__description-radio::before {
+  outline: 2px solid @pink;
+}
+
+.form-field__checkbox:focus + .form-field__description-checkbox::before {
+  outline: 2px solid @pink;
 }
 
 .form-field__field--contacts {
