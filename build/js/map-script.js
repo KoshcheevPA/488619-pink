@@ -1,0 +1,1 @@
+ymaps.ready(function(){var e=new ymaps.Map("map",{center:[59.938631,30.323055],zoom:16},{searchControlProvider:"yandex#search"}),a=new ymaps.Placemark(e.getCenter(),{hintContent:""},{iconLayout:"default#image",iconImageHref:"./img/icon-map-marker.svg",iconImageSize:[35,35]});e.geoObjects.add(a)});
